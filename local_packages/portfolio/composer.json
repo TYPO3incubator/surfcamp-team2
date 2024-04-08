@@ -1,0 +1,32 @@
+{
+  "name": "surfcamp/portfolio",
+  "description": "TYPO3 set for a portfolio website",
+  "type": "typo3-cms-extension",
+  "homepage": "https://team2.surfcamp.typo3.com",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "fpachowsky",
+      "email": "f.pachowsky@googlemail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.2.0",
+    "typo3/cms-core": "dev-main",
+    "typo3/cms-backend": "dev-main",
+    "typo3/cms-frontend": "dev-main"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "portfolio"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Surfcamp\\Portfolio\\": "Classes"
+    }
+  }
+}
