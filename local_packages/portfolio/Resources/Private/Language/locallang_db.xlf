@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:portfolio/Resources/Private/Language/locallang_db.xlf" product-name="portfolio">
+		<header/>
+		<body>
+			<trans-unit id="content_element.introduction_card" resname="content_element.introduction_card" xml:space="preserve">
+				<source>Introduction Card</source>
+			</trans-unit>
+			<trans-unit id="content_element.introduction_card.description" resname="content_element.introduction_card" xml:space="preserve">
+				<source>Element to introduce yourself</source>
+			</trans-unit>
+
+			<trans-unit id="field.link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="field.link_text">
+				<source>Link text</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
