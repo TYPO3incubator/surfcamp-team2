@@ -4,22 +4,17 @@
 >
 
 <f:comment>
-    headline:           string
-    headlinePosition:   string (optional)
-    tag:                number (optional)
-    bottomLine:         boolean (optional)
-    additionalClasses:  string (optional)
-
-    <f:render partial="Content/Atoms/Headline" arguments="{
-        headline: string,
-        headlinePosition: string (optional),
-        tag: number,
-        bottomLine: boolean,
-        additionalClasses: string
-    }" />
+    <!--
+        <f:render partial="Content/Atoms/Headline" arguments="{
+            headline: string,
+            headlinePosition: string (optional),
+            tag: number (optional),
+            classes: string (optional)
+        }" />
+    -->
 </f:comment>
 
-<f:variable name="headlineClasses" value="headline {f:if(condition: '{headlinePosition}', then: 'text-{headlinePosition}')} {f:if(condition: '{bottomLine}', then: 'bottom-line')} {additionalClasses}" />
+<f:variable name="headlineClasses" value="headline {f:if(condition: '{headlinePosition}', then: 'text-{headlinePosition}')} {classes}" />
 
 <f:switch expression="{tag}">
     <f:case value="1">
