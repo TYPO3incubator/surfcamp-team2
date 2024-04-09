@@ -1,0 +1,8 @@
+<div class="ce-introduction-card">
+    <f:image image="{image.0}" />
+    <h1>{data.header}</h1>
+    <p>{data.bodytext}</p>
+    <f:if condition="{data.link}">
+        <f:link.typolink parameter="{data.link}">{data.link_text}</f:link.typolink>
+    </f:if>
+</div>

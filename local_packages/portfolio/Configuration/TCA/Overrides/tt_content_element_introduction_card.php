@@ -44,6 +44,11 @@ $boot = static function (): void {
                         'required' => true,
                     ]
                 ],
+                'image' => [
+                    'config' => [
+                        'maxitems' => 1
+                    ]
+                ]
             ]
         ]
     );
