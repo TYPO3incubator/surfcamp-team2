@@ -1,6 +1,5 @@
 page = PAGE
 page {
     10 = PAGEVIEW
-    10.paths.100 = EXT:portfolio/Resources/Private/Templates/
-    10.paths.200 = EXT:portfolio/Resources/Private/Partials/
+    10.paths.0 = EXT:portfolio/Resources/Private/Templates/
 }
