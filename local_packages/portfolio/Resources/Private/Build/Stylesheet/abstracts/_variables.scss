@@ -1,0 +1,163 @@
+/* ==== Variables ==== */
+
+// Colors
+
+// * CSS variables semantics
+@include css-root-vars() {
+    --color-primary: #fa5e16;
+    --color-secondary: #fac516;
+    --color-base-background: #232323;
+    --color-base-text: #e5e5e5;
+    --color-button-text: #e5e5e5;
+    --font-copytext-name: 'Roboto';
+    --font-headline-name: 'Roboto Slab';
+}
+
+$body-bg-color:             var(--color-background);
+
+$colors: (
+    'primary':            var(--color-primary),
+    'secondary':          var(--color-secondary),
+    'base-background':    var(--color-base-background),
+    'base-text':          var(--color-base-text),
+);
+
+// Typography
+// * base
+$font-size-root:              10px;
+$line-height-base:            1.25;
+
+// Breakpoint Sizes
+$breakpoints: (
+    xs: 0px,
+    sm: 375px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1440px,
+);
+
+// * font families
+$font-family:                 var(--font-copytext-name), sans-serif;
+$font-family-heading:         var(--font-copytext-name), $font-family;
+
+// * font-weights
+$font-light:            300;
+$font-regular:          400;
+$font-medium:           500;
+$font-semiBold:         600;
+$font-bold:             700;
+
+// * font sizes
+$font-40:               4rem;
+$font-32:               3.2rem;
+$font-28:               2.8rem;
+$font-24:               2.4rem;
+$font-20:               2rem;
+$font-18:               1.8rem;
+$font-16:               1.6rem;
+$font-14:               1.4rem;
+
+// * fix headline sizes
+$font-size-h1:          $font-24;
+$font-size-h2:          $font-20;
+$font-size-h3:          $font-18;
+$font-size-h4:          $font-18;
+$font-size-h5:          $font-18;
+$font-size-h6:          $font-18;
+
+$font-size-h1-lg:       $font-28;
+$font-size-h2-lg:       $font-24;
+$font-size-h3-lg:       $font-20;
+$font-size-h4-lg:       $font-20;
+$font-size-h5-lg:       $font-20;
+$font-size-h6-lg:       $font-20;
+
+@include css-root-vars() {
+    --font-size-h1: #{$font-size-h1};
+    --font-size-h2: #{$font-size-h2-lg};
+    --font-size-h3: #{$font-size-h3-lg};
+    --font-size-h4: #{$font-size-h4-lg};
+    --font-size-h5: #{$font-size-h5-lg};
+    --font-size-h6: #{$font-size-h6-lg};
+
+    @include breakpoint-up(md) {
+        --font-size-h1: #{$font-size-h1-lg};
+    }
+}
+
+@include css-root-vars {
+    --text-sm: #{$font-14};
+    --text-md: #{$font-18};
+    --text-lg: #{$font-24};
+    --text-xl: #{$font-32};
+
+    @include breakpoint-up(md) {
+        --text-lg: #{$font-32};
+        --text-xl: #{$font-40};
+    }
+}
+
+// * semantics
+$base-text-color:             var(--color-base-text);
+$base-text-size:              $font-18;
+$selection-text-color:        rgba(var(--color-primary), .8);
+$selection-background-color:  rgba(white, .3);
+
+// Spaces
+// * primitives
+$size-0:            0;
+$size-1:            .1rem;
+$size-2:            .2rem;
+$size-4:            .4rem;
+$size-8:            .8rem;
+$size-12:            1.2rem;
+$size-16:            1.6rem;
+$size-24:            2.4rem;
+$size-32:            3.2rem;
+$size-48:            4.8rem;
+$size-64:            6.4rem;
+$size-96:            9.6rem;
+$size-128:           12.8rem;
+
+// Layout
+// * semantic spacer for sections
+$scroll-padding-top: $size-64;
+
+@include css-root-vars() {
+    --spacer-sm: #{$size-12};
+    --spacer-md: #{$size-32};
+    --spacer-lg: #{$size-64};
+
+    @include breakpoint-up(md) {
+        --spacer-sm: #{$size-24};
+        --spacer-md: #{$size-64};
+        --spacer-lg: #{$size-128};
+    }
+}
+
+// Grid
+// * container
+$container-max-width: 177.2rem;
+$container-padding: $size-12;
+$container-padding-md: $size-32;
+$container-padding-lg: $size-48;
+
+// * rows
+$row-padding: 0rem;
+
+// * columns
+$gridsize: 12;
+$col-padding: $size-16;
+
+// Transitions
+$transition-timing-fast:  150ms;
+$transition-timing-base:  300ms;
+$transition-timing-slow: 500ms;
+
+// Image Ratios
+$ratios: (
+    '16-9':    53.33%,
+    '3-2':     66%,
+    '4-3':     75%,
+    '1-1':     100%,
+);

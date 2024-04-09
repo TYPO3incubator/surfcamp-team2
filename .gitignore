@@ -2,6 +2,7 @@
 /public/
 /var/
 /vendor/
+/local_packages/portfolio/node_modules/
 /typo3_core/
 *.idea
 *.project
