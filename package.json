@@ -1,0 +1,17 @@
+{
+  "name": "surfcamp-team2",
+  "version": "1.0.0",
+  "description": "This Git repository is intended for use by our dedicated teams at the [TYPO3 Surfcamp](https://surfcamp.typo3.com/).",
+  "workspaces": [
+    "local_packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "build:ts": "npm run build:ts --workspaces --if-present",
+    "build:sass": "npm run build:sass --workspaces --if-present",
+    "watch:ts": "npm run watch:ts --workspaces --if-present",
+    "watch:sass": "npm run watch:sass --workspaces --if-present"
+  },
+  "license": "GPL-2.0-or-later"
+}
+
