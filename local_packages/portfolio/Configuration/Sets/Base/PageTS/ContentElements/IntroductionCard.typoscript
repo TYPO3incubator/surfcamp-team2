@@ -1,0 +1,12 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements.introduction_card {
+        iconIdentifier = icon_intro
+        title = LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.introduction_card
+        description = LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.introduction_card.description
+        tt_content_defValues {
+            CType = introduction_card
+        }
+    }
+
+    show := addToList(introduction_card)
+}
