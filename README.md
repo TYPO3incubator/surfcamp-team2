@@ -33,6 +33,23 @@ ddev auth ssh
 ddev pull assets
 ```
 
+### NPM Scripts / Frontend Toolchain
+
+To install the necessary dependencies, just `npm install` in the project root, the workspaces will take care of the rest for you.
+
+For building the SCSS / TypeScript you can run: 
+
+```build
+npm run build
+npm run build:ts
+npm run build:sass
+```
+To run a watcher for the SCSS / TypeScript:
+```watch
+npm run watch:ts
+npm run watch:sass
+```
+
 ### Contributing to the TYPO3 Core
 
 In case the team decides to, or needs to contribute to the TYPO3 core, this project can be "upgraded".
