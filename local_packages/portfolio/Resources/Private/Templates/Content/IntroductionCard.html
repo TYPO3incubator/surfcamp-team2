@@ -1,5 +1,7 @@
 <div class="ce-introduction-card">
-    <f:image image="{image.0}" />
+    <f:if condition="{image -> f:count()} > 0">
+        <f:then><f:image image="{image.0}" /></f:then>
+    </f:if>
     <h1>{data.header}</h1>
     <p>{data.bodytext}</p>
     <f:if condition="{data.link}">
