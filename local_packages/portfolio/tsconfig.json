@@ -107,6 +107,6 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
   "include": [
-    "Resources/Private/TypeScript/**/*.ts"
+    "Resources/Private/Build/TypeScript/**/*.ts"
   ]
 }
