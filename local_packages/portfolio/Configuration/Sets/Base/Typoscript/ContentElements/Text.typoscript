@@ -1,0 +1,5 @@
+tt_content.text < lib.content
+tt_content.text {
+    templateName = Text.html
+}
+

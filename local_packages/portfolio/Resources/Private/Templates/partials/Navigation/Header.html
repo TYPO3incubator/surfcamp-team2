@@ -1,0 +1,12 @@
+<f:for each="{headerMenu}" as="item">
+    <f:if condition="{item.link}">
+        <f:if condition="{item.active}">
+            <f:then>
+                <a href="{item.link}" title="{item.title}">{item.title}</a>
+            </f:then>
+            <f:else>
+                <a href="{item.link}" title="{item.title}" class="inactive">{item.title}</a>
+            </f:else>
+        </f:if>
+    </f:if>
+</f:for>

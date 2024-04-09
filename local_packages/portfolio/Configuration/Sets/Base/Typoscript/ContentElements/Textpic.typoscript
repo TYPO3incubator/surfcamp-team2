@@ -1,0 +1,13 @@
+tt_content.textpic < lib.content
+tt_content.textpic {
+    templateName = Text.html
+
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+            references.fieldName = image
+            as = image
+        }
+    }
+}
+

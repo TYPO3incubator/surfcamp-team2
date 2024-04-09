@@ -23,3 +23,5 @@ languages:
     flag: de
 rootPageId: 1
 routes: {  }
+dependencies:
+  - surfcamp/base
