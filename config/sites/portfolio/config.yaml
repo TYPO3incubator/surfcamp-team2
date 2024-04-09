@@ -1,4 +1,4 @@
-base: 'https://surfcamp-team2.ddev.site/'
+base: '%env(TYPO3_BASE_URL)%'
 errorHandling:
   -
     errorCode: 404
