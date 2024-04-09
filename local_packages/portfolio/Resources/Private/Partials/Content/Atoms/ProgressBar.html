@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html
+    data-namespace-typo3-fluid="true"
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+>
 
-</body>
+<f:comment>
+    <!--
+        <f:render partial="Content/Atoms/ProgressBar" arguments="{
+            label: string,
+            value: number,
+            max: number (optional),
+            classes: string (optional)
+        }" />
+    -->
+</f:comment>
+
+<label for="progress-bar">{label}</label>
+<progress id="progress-bar" class="progress-bar {classes}" max="{f:if(condition: max, then: max, else: '100')}" value="{value}">{value}</progress>
+
 </html>
