@@ -35,19 +35,19 @@ ddev pull assets
 
 ### NPM Scripts / Frontend Toolchain
 
-To install the necessary dependencies, just `npm install` in the project root, the workspaces will take care of the rest for you.
+To install the necessary dependencies, just `ddev npm install` in the project root, the workspaces will take care of the rest for you.
 
 For building the SCSS / TypeScript you can run: 
 
 ```build
-npm run build
-npm run build:ts
-npm run build:sass
+ddev npm run build
+ddev npm run build:ts
+ddev npm run build:sass
 ```
 To run a watcher for the SCSS / TypeScript:
 ```watch
-npm run watch:ts
-npm run watch:sass
+ddev npm run watch:ts
+ddev npm run watch:sass
 ```
 
 ### Contributing to the TYPO3 Core

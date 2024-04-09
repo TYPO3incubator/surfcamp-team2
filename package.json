@@ -6,11 +6,11 @@
     "local_packages/*"
   ],
   "scripts": {
-    "build": "npm run build --workspaces --if-present",
-    "build:ts": "npm run build:ts --workspaces --if-present",
-    "build:sass": "npm run build:sass --workspaces --if-present",
-    "watch:ts": "npm run watch:ts --workspaces --if-present",
-    "watch:sass": "npm run watch:sass --workspaces --if-present"
+    "build": "ddev npm run build --workspaces --if-present",
+    "build:ts": "ddev npm run build:ts --workspaces --if-present",
+    "build:sass": "ddev npm run build:sass --workspaces --if-present",
+    "watch:ts": "ddev npm run watch:ts --workspaces --if-present",
+    "watch:sass": "ddev npm run watch:sass --workspaces --if-present"
   },
   "license": "GPL-2.0-or-later"
 }
