@@ -1,6 +1,6 @@
-tt_content.introduction_card < lib.content
+tt_content.introduction_card =< lib.content
 tt_content.introduction_card {
-    templateName = IntroductionCard.html
+    templateName = IntroductionCard
 
     dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor

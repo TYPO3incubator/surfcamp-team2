@@ -8,9 +8,11 @@ $boot = static function (): void {
         'tt_content',
         'CType',
         [
-            'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display',
-            'skill_display',
-            'icon_skills'
+            'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display',
+            'description' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display.description',
+            'value' => 'skill_display',
+            'icon' => 'icon_skills',
+            'group' => 'default',
         ],
         '--div--',
         'after'
