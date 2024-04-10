@@ -24,4 +24,8 @@ page {
         defer = 1
       }
     }
+
+    meta {
+      viewport = width=device-width, minimum-scale=1.0, maximum-scale=5.0, initial-scale=1.0
+    }
 }

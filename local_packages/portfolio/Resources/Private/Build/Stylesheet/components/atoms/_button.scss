@@ -10,6 +10,7 @@
     --padding: #{$size-12} #{$size-48};
     --button-border-radius: #{$size-48};
 
+    display: inline-block;
     cursor: pointer;
     border: none;
     padding: var(--padding);
@@ -19,6 +20,7 @@
     font-weight: $font-bold;
     transition: all $transition-timing-fast linear;
     border-radius: var(--button-border-radius);
+    text-decoration: none;
 
     @include interaction {
         background-color: var(--button-hover-bg-color);

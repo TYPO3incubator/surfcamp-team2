@@ -1,10 +1,47 @@
-<div class="ce-introduction-card">
-    <f:if condition="{image -> f:count()} > 0">
-        <f:then><f:image image="{image.0}" /></f:then>
-    </f:if>
-    <h1>{data.header}</h1>
-    <p>{data.bodytext}</p>
-    <f:if condition="{data.link}">
-        <f:link.typolink parameter="{data.link}">{data.link_text}</f:link.typolink>
-    </f:if>
+<div class="ce-introduction-card container">
+    <div class="row">
+        <f:if condition="{image.0}">
+            <f:then>
+                <div class="col sm-12 md-4 md-offset-1 lg-3 lg-offset-2 xl-2 xl-offset-2">
+                    <f:render section="Image" arguments="{_all}" />
+                </div>
+                <div class="col sm-12 md-7 lg-6">
+                    <f:render section="Content" arguments="{_all}" />
+                </div>
+            </f:then>
+            <f:else>
+                <div class="col sm-12 md-10 md-offset-1 lg-7 lg-offset-2 xl-8 xl-offset-2">
+                    <f:render section="Content" arguments="{_all}" />
+                </div>
+            </f:else>
+        </f:if>
+    </div>
 </div>
+
+<f:section name="Image">
+    <div class="ce-introduction-card__image">
+        <div class="image">
+            <div class="object-fit ratio--1-1">
+                <f:image image="{image.0}" />
+            </div>
+        </div>
+    </div>
+</f:section>
+
+<f:section name="Content">
+    <div class="ce-introduction-card__content">
+        <f:render partial="Content/Atoms/Headline" arguments="{
+            headline: data.header,
+            tag: 1,
+        }" />
+        <f:render partial="Content/Atoms/CopyText" arguments="{
+            bodytext: data.bodytext
+        }" />
+        <f:if condition="{data.link}">
+            <f:render partial="Content/Atoms/Button" arguments="{
+                label: data.link_text,
+                link: data.link,
+            }" />
+        </f:if>
+    </div>
+</f:section>

@@ -16,12 +16,12 @@
 <f:if condition="{link}">
     <f:then>
         <f:link.typolink parameter="{link}" class="button {f:if(condition: '{secondar}')}">
-            {text}
+            {label}
         </f:link.typolink>
     </f:then>
     <f:else>
         <button class="button">
-            {text}
+            {label}
         </button>
     </f:else>
 </f:if>

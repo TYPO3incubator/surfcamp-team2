@@ -81,6 +81,10 @@
       }
     }
 
+    .#{$name}-offset-0 {
+      margin-left: 0;
+    }
+
     .#{$name}-fifth {
       width: 20%;
     }
