@@ -1,6 +1,6 @@
 socials:
-  showInFooter: true
-  showInHeader: true
+  showInFooter: false
+  showInHeader: false
   showActionButtons: true
   facebook:
     link: 'https://www.facebook.com/'
