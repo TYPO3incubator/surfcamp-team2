@@ -1,6 +1,6 @@
 lib.content = FLUIDTEMPLATE
 lib.content {
     layoutRootPaths.10 = EXT:portfolio/Resources/Private/Layouts/
-    partialRootPaths.10 = EXT:portfolio/Resources/Private/Partials/
+    partialRootPaths.10 = EXT:portfolio/Resources/Private/Templates/Partials/
     templateRootPaths.10 = EXT:portfolio/Resources/Private/Templates/Content/
 }
