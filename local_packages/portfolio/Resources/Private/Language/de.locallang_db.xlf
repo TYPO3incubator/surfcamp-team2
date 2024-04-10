@@ -45,6 +45,22 @@
 				<target>Fortschritt (in Prozent)</target>
 			</trans-unit>
 
+			<trans-unit id="content_element.resume" resname="content_element.resume" xml:space="preserve">
+				<source>Resume</source>
+				<target>Lebenslauf</target>
+			</trans-unit>
+			<trans-unit id="content_element.resume.description" resname="content_element.resume.description" xml:space="preserve">
+				<source>Ein Element zur Präsentation deines Lebenslaufs</source>
+			</trans-unit>
+			<trans-unit id="content_element.resume.item" resname="content_element.resume.item" xml:space="preserve">
+				<source>Resume section</source>
+				<target>Lebenslaufabschnitt</target>
+			</trans-unit>
+			<trans-unit id="content_element.resume.items" resname="content_element.resume.items" xml:space="preserve">
+				<source>Resume sections</source>
+				<target>Lebenslaufabschnitte</target>
+			</trans-unit>
+
 			<trans-unit id="field.link">
 				<source>Link</source>
 				<target>Link</target>
@@ -53,6 +69,36 @@
 				<source>Link text</source>
 				<target>Link Text</target>
 			</trans-unit>
+			<trans-unit id="field.location">
+				<source>Location</source>
+				<target>Standort</target>
+			</trans-unit>
+			<trans-unit id="field.position">
+				<source>Position</source>
+				<target>Position</target>
+			</trans-unit>
+			<trans-unit id="field.time_period">
+				<source>Time period</source>
+				<target>Zeitraum</target>
+			</trans-unit>
+			<trans-unit id="field.description">
+				<source>Description</source>
+				<target>Beschreibung</target>
+			</trans-unit>
+			<trans-unit id="field.institution">
+				<source>Institution</source>
+				<target>Institution</target>
+			</trans-unit>
+
+			<trans-unit id="field.additional_header">
+				<source>Additional Header</source>
+				<target>Zusätzlicher Header</target>
+			</trans-unit>
+			<trans-unit id="field.additional_resume_items">
+				<source>Additional Resume sections</source>
+				<target>Zusätzliche Lebenslaufabschnitte</target>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>

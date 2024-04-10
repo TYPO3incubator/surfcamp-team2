@@ -35,12 +35,49 @@
 				<source>Progress Level (in Percent)</source>
 			</trans-unit>
 
+			<trans-unit id="content_element.resume" resname="content_element.resume" xml:space="preserve">
+				<source>Resume</source>
+			</trans-unit>
+			<trans-unit id="content_element.resume.description" resname="content_element.resume.description" xml:space="preserve">
+				<source>A element to present your resume</source>
+			</trans-unit>
+			<trans-unit id="content_element.resume.item" resname="content_element.resume.item" xml:space="preserve">
+				<source>Resume section</source>
+			</trans-unit>
+			<trans-unit id="content_element.resume.items" resname="content_element.resume.items" xml:space="preserve">
+				<source>Resume sections</source>
+			</trans-unit>
+
 			<trans-unit id="field.link">
 				<source>Link</source>
 			</trans-unit>
 			<trans-unit id="field.link_text">
 				<source>Link text</source>
 			</trans-unit>
+			<trans-unit id="field.location">
+				<source>Location</source>
+			</trans-unit>
+			<trans-unit id="field.position">
+				<source>Position</source>
+			</trans-unit>
+			<trans-unit id="field.time_period">
+				<source>Time period</source>
+			</trans-unit>
+			<trans-unit id="field.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="field.institution">
+				<source>Institution</source>
+			</trans-unit>
+
+			<trans-unit id="field.additional_header">
+				<source>Additional Header</source>
+			</trans-unit>
+			<trans-unit id="field.additional_resume_items">
+				<source>Additional Resume sections</source>
+			</trans-unit>
+
+			
 		</body>
 	</file>
 </xliff>

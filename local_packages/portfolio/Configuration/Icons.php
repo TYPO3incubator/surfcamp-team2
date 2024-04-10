@@ -12,4 +12,8 @@ return [
         'provider' => BitmapIconProvider::class,
         'source' => 'EXT:portfolio/Resources/Public/Icons/Backend/skills.png',
     ],
+    'icon_resume' => [
+        'provider' => BitmapIconProvider::class,
+        'source' => 'EXT:portfolio/Resources/Public/Icons/Backend/resume.png',
+    ],
 ];

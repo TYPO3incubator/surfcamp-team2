@@ -1,0 +1,12 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements.resume {
+        iconIdentifier = icon_resume
+        title = LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.resume
+        description = LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.resume.description
+        tt_content_defValues {
+            CType = resume
+        }
+    }
+
+    show := addToList(resume)
+}
