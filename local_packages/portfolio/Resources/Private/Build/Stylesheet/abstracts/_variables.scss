@@ -6,12 +6,12 @@
 @include css-root-vars() {
     --color-primary: #fa5e16;
     --color-secondary: #fac516;
-    --color-base-background: #232323;
+    --color-base-background: #444;
     --color-base-text: #fff;
     --color-base-text-secondary: #e2e2e2;
     --color-button-text: #e5e5e5;
     --color-section-background-light: #585858;
-    --color-section-background-dark: #4D4A4A;
+    --color-section-background-dark: #444;
     --font-copytext-name: 'Roboto';
     --font-headline-name: 'Roboto Slab';
 }
@@ -79,14 +79,19 @@ $font-size-h6-lg:       $font-20;
 
 @include css-root-vars() {
     --font-size-h1: #{$font-size-h1};
-    --font-size-h2: #{$font-size-h2-lg};
-    --font-size-h3: #{$font-size-h3-lg};
-    --font-size-h4: #{$font-size-h4-lg};
-    --font-size-h5: #{$font-size-h5-lg};
-    --font-size-h6: #{$font-size-h6-lg};
+    --font-size-h2: #{$font-size-h2};
+    --font-size-h3: #{$font-size-h3};
+    --font-size-h4: #{$font-size-h4};
+    --font-size-h5: #{$font-size-h5};
+    --font-size-h6: #{$font-size-h6};
 
     @include breakpoint-up(md) {
         --font-size-h1: #{$font-size-h1-lg};
+        --font-size-h2: #{$font-size-h2-lg};
+        --font-size-h3: #{$font-size-h3-lg};
+        --font-size-h4: #{$font-size-h4-lg};
+        --font-size-h5: #{$font-size-h5-lg};
+        --font-size-h6: #{$font-size-h6-lg};
     }
 }
 
