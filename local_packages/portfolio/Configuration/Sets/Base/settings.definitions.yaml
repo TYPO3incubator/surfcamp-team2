@@ -1,71 +1,81 @@
 settings:
-    socials.facebook.link:
-      label: 'Facebook Link'
-      description: 'Link to your Facebook profile'
-      type: string
-      default: ''
-    socials.instagram.link:
-      label: 'Instagram Link'
-      description: 'Link to your Instagram profile'
-      type: string
-      default: ''
-    socials.threads.link:
-      label: 'Threads Link'
-      description: 'Link to your Threads profile'
-      type: string
-      default: ''
-    socials.whatsapp.link:
-      label: 'Threads Link'
-      description: 'Link to your Whatsapp channel'
-      type: string
-      default: ''
-    socials.youtube.link:
-      label: 'Youtube Link'
-      description: 'Link to your Youtube channel'
-      type: string
-      default: ''
-    socials.vimeo.link:
-      label: 'Vimeo Link'
-      description: 'Link to your Vimeo channel'
-      type: string
-      default: ''
-    socials.xing.link:
-      label: 'XING Link'
-      description: 'Link to your XING profile'
-      type: string
-      default: ''
-    socials.linkedin.link:
-      label: 'LinkedIn Link'
-      description: 'Link to your LinkedIn profile'
-      type: string
-      default: ''
-    socials.snapchat.link:
-      label: 'Snapchat Link'
-      description: 'Link to your Snapchat profile'
-      type: string
-      default: ''
-    socials.tiktok.link:
-      label: 'TikTok Link'
-      description: 'Link to your TikTok channel'
-      type: string
-      default: ''
-    socials.reddit.link:
-      label: 'Reddit Link'
-      description: 'Link to your Reddit profile'
-      type: string
-      default: ''
-    socials.x.link:
-      label: 'X/Twitter Link'
-      description: 'Link to your X/Twitter profile'
-      type: string
-      default: ''
-    socials.twitch.link:
-      label: 'Twitch Link'
-      description: 'Link to your Twitch profile'
-      type: string
-      default: ''
-    socials.tumblr.link:
-      label: 'Tumblr Link'
-      description: 'Link to your Tumblr profile'
-      type: string
-      default: ''
+  socials.enabled:
+    label: 'Enable Social Links'
+    description: 'Enable social links in the footer'
+    type: boolean
+    default: true
+  socials.facebook.link:
+    label: 'Facebook Link'
+    description: 'Link to your Facebook profile'
+    type: string
+    default: ''
+  socials.instagram.link:
+    label: 'Instagram Link'
+    description: 'Link to your Instagram profile'
+    type: string
+    default: ''
+  socials.threads.link:
+    label: 'Threads Link'
+    description: 'Link to your Threads profile'
+    type: string
+    default: ''
+  socials.whatsapp.link:
+    label: 'Threads Link'
+    description: 'Link to your Whatsapp channel'
+    type: string
+    default: ''
+  socials.youtube.link:
+    label: 'Youtube Link'
+    description: 'Link to your Youtube channel'
+    type: string
+    default: ''
+  socials.vimeo.link:
+    label: 'Vimeo Link'
+    description: 'Link to your Vimeo channel'
+    type: string
+    default: ''
+  socials.xing.link:
+    label: 'XING Link'
+    description: 'Link to your XING profile'
+    type: string
+    default: ''
+  socials.linkedin.link:
+    label: 'LinkedIn Link'
+    description: 'Link to your LinkedIn profile'
+    type: string
+    default: ''
+  socials.snapchat.link:
+    label: 'Snapchat Link'
+    description: 'Link to your Snapchat profile'
+    type: string
+    default: ''
+  socials.tiktok.link:
+    label: 'TikTok Link'
+    description: 'Link to your TikTok channel'
+    type: string
+    default: ''
+  socials.reddit.link:
+    label: 'Reddit Link'
+    description: 'Link to your Reddit profile'
+    type: string
+    default: ''
+  socials.x.link:
+    label: 'X/Twitter Link'
+    description: 'Link to your X/Twitter profile'
+    type: string
+    default: ''
+  socials.twitch.link:
+    label: 'Twitch Link'
+    description: 'Link to your Twitch channel'
+    type: string
+    default: ''
+  socials.tumblr.link:
+    label: 'Tumblr Link'
+    description: 'Link to your Tumblr profile'
+    type: string
+    default: ''
+  socials.pinterest.link:
+    label: 'Pinterest Link'
+    description: 'Link to your Pinterest profile'
+    type: string
+    default: ''
