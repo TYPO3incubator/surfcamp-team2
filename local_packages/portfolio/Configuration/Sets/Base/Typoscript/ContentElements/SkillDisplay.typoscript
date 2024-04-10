@@ -1,6 +1,6 @@
-tt_content.skill_display < lib.content
+tt_content.skill_display =< lib.content
 tt_content.skill_display {
-    templateName = SkillDisplay.html
+    templateName = SkillDisplay
 
     dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor

@@ -8,29 +8,29 @@ $boot = static function (): void {
         'tt_content',
         'CType',
         [
-            'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.services',
-            'services',
-            'icon_services'
+            'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.client_logos',
+            'client_logos',
+            'icon_clients'
         ],
         '--div--',
         'after'
     );
 
-    if (empty($GLOBALS['TCA']['tt_content']['types']['services'])) {
-        $GLOBALS['TCA']['tt_content']['types']['services'] = [];
+    if (empty($GLOBALS['TCA']['tt_content']['types']['client_logos'])) {
+        $GLOBALS['TCA']['tt_content']['types']['client_logos'] = [];
     }
 
-    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['services'] = 'icon_services';
+    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['client_logos'] = 'icon_clients';
 
-    $GLOBALS['TCA']['tt_content']['types']['services'] = array_replace_recursive(
-        $GLOBALS['TCA']['tt_content']['types']['services'],
+    $GLOBALS['TCA']['tt_content']['types']['client_logos'] = array_replace_recursive(
+        $GLOBALS['TCA']['tt_content']['types']['client_logos'],
         [
             'showitem' => '
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
                 header,
                 header_layout,
                 subheader,
-                services,
+                client_logos,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.access,
@@ -38,11 +38,6 @@ $boot = static function (): void {
                 endtime
             ',
             'columnsOverrides' => [
-                'header' => [
-                    'config' => [
-                        'required' => true,
-                    ]
-                ],
                 'header_layout' => [
                     'config' => [
                         'default' => 2
@@ -52,11 +47,11 @@ $boot = static function (): void {
         ]
     );
 
-    $GLOBALS['TCA']['tt_content']['columns']['services'] = [
-        'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.services',
+    $GLOBALS['TCA']['tt_content']['columns']['client_logos'] = [
+        'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.client_logos',
         'config' => [
             'type' => 'inline',
-            'foreign_table' => 'tx_portfolio_service',
+            'foreign_table' => 'tx_portfolio_client_logo',
             'foreign_field' => 'parent',
             'foreign_sortby' => 'sorting',
             'appearance' => [

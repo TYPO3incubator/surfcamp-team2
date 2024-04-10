@@ -78,10 +78,16 @@ h3,.h3,
 h4,.h4,
 h5,.h5,
 h6,.h6 {
-    line-height: 1.35;
+    line-height: 1.2;
+    font-weight: $font-medium;
+    hyphens: auto;
 
     @include first-no-margin('top');
     @include last-no-margin('bottom');
+
+    @include breakpoint-up(lg) {
+        hyphens: initial;
+    }
 }
 
 // Headlines used inside regular bodytext

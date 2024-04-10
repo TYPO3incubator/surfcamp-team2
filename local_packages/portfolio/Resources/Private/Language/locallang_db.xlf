@@ -50,6 +50,15 @@
 			<trans-unit id="content_element.services">
 				<source>Services</source>
 			</trans-unit>
+			<trans-unit id="content_element.services.description">
+				<source>A element to present all provided services</source>
+			</trans-unit>
+			<trans-unit id="content_element.client_logos">
+				<source>Client Logos</source>
+			</trans-unit>
+			<trans-unit id="content_element.client_logos.description">
+				<source>A element to present all logos of a list of clients</source>
+			</trans-unit>
 
 			<trans-unit id="field.link">
 				<source>Link</source>
@@ -74,6 +83,9 @@
 			</trans-unit>
 			<trans-unit id="field.name">
 				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="field.image">
+				<source>Image</source>
 			</trans-unit>
 
 			<trans-unit id="field.additional_header">

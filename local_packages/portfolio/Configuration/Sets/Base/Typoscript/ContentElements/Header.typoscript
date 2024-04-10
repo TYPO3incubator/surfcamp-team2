@@ -1,4 +1,4 @@
-tt_content.header < lib.content
+tt_content.header =< lib.content
 tt_content.header {
-    templateName = Header.html
+    templateName = Header
 }
