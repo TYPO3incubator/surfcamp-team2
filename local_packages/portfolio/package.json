@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "license": "GPL-2.0-or-later",
-  "scripts": {
-    "build": "ddev npm run build:sass && ddev npm run build:ts",
+  "scripts": {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
+    "build": "npm run build:sass && npm run build:ts",
     "build:sass": "sass ./Resources/Private/Build/Stylesheet/styles.scss:./Resources/Public/Stylesheet/styles.css --style compressed",
     "build:ts": "tsc",
     "watch:ts": "tsc --watch",
