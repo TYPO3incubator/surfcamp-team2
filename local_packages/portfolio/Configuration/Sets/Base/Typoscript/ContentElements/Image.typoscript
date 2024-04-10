@@ -1,6 +1,6 @@
-tt_content.image < lib.content
+tt_content.image =< lib.content
 tt_content.image {
-    templateName = Image.html
+    templateName = Image
 
     dataProcessing {
         10 = files
