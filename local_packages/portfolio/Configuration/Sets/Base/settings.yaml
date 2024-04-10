@@ -1,5 +1,7 @@
 socials:
-  enable: true
+  showInFooter: true
+  showInHeader: true
+  showActionButtons: true
   facebook:
     link: 'https://www.facebook.com/'
   instagram:
