@@ -1,0 +1,12 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements.skill_display {
+        iconIdentifier = icon_skills
+        title = LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display
+        description = LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display.description
+        tt_content_defValues {
+            CType = skill_display
+        }
+    }
+
+    show := addToList(skill_display)
+}

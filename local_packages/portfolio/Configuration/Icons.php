@@ -8,4 +8,8 @@ return [
         'provider' => BitmapIconProvider::class,
         'source' => 'EXT:portfolio/Resources/Public/Icons/Backend/intro.png',
     ],
+    'icon_skills' => [
+        'provider' => BitmapIconProvider::class,
+        'source' => 'EXT:portfolio/Resources/Public/Icons/Backend/skills.png',
+    ],
 ];

@@ -7,7 +7,32 @@
 				<source>Introduction Card</source>
 			</trans-unit>
 			<trans-unit id="content_element.introduction_card.description" resname="content_element.introduction_card" xml:space="preserve">
-				<source>Element to introduce yourself</source>
+				<source>A element to introduce yourself</source>
+			</trans-unit>
+
+			<trans-unit id="content_element.skill_display" resname="content_element.skill_display" xml:space="preserve">
+				<source>Skill Display</source>
+			</trans-unit>
+			<trans-unit id="content_element.skill_display.description" resname="content_element.skill_display.description" xml:space="preserve">
+				<source>A element to present your skills</source>
+			</trans-unit>
+			<trans-unit id="content_element.skill_display.skill" resname="content_element.skill_display.skill" xml:space="preserve">
+				<source>Skill</source>
+			</trans-unit>
+			<trans-unit id="content_element.skill_display.skills" resname="content_element.skill_display.skills" xml:space="preserve">
+				<source>Skills</source>
+			</trans-unit>
+			<trans-unit id="content_element.skill_display.skills_help" resname="content_element.skill_display.skills_help" xml:space="preserve">
+				<source>Please list all your skills here and sort them as required</source>
+			</trans-unit>
+			<trans-unit id="content_element.skill_display.show_progress_level" resname="content_element.skill_display.show_progress_level" xml:space="preserve">
+				<source>Show skills progress bar for skills</source>
+			</trans-unit>
+			<trans-unit id="content_element.skill_display.skill_name" resname="content_element.skill_display.skill_name" xml:space="preserve">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="content_element.skill_display.skill_level" resname="content_element.skill_display.skill_level" xml:space="preserve">
+				<source>Progress Level (in Percent)</source>
 			</trans-unit>
 
 			<trans-unit id="field.link">
