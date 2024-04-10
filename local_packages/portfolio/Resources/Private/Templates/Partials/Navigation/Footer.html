@@ -1,12 +1,7 @@
-<f:for each="{footerMenu}" as="item">
-    <f:if condition="{item.link}">
-        <f:if condition="{item.active}">
-            <f:then>
-                <a href="{item.link}" title="{item.title}">{item.title}</a>
-            </f:then>
-            <f:else>
-                <a href="{item.link}" title="{item.title}" class="inactive">{item.title}</a>
-            </f:else>
-        </f:if>
-    </f:if>
-</f:for>
+<footer class="footer">
+    <p class="footer__copyright">Copyright</p>
+    <f:render partial="Content/Molecules/MenuList" arguments="{
+        menu: footerMenu,
+        classes: 'footer__menu'
+    }" />
+</footer>
