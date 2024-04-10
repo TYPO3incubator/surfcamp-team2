@@ -28,6 +28,7 @@ $boot = static function (): void {
             'showitem' => '
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
                 header,
+                header_layout,
                 subheader,
                 services,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
@@ -40,6 +41,11 @@ $boot = static function (): void {
                 'header' => [
                     'config' => [
                         'required' => true,
+                    ]
+                ],
+                'header_layout' => [
+                    'config' => [
+                        'default' => 2
                     ]
                 ],
             ]
