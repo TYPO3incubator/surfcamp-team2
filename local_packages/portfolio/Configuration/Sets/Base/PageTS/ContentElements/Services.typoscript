@@ -1,0 +1,12 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements.services {
+        iconIdentifier = icon_services
+        title = LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.services
+        description = LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.services.description
+        tt_content_defValues {
+            CType = services
+        }
+    }
+
+    show := addToList(services)
+}

@@ -47,6 +47,9 @@
 			<trans-unit id="content_element.resume.items" resname="content_element.resume.items" xml:space="preserve">
 				<source>Resume sections</source>
 			</trans-unit>
+			<trans-unit id="content_element.services">
+				<source>Services</source>
+			</trans-unit>
 
 			<trans-unit id="field.link">
 				<source>Link</source>
@@ -69,12 +72,15 @@
 			<trans-unit id="field.institution">
 				<source>Institution</source>
 			</trans-unit>
+			<trans-unit id="field.name">
+				<source>Name</source>
+			</trans-unit>
 
 			<trans-unit id="field.additional_header">
 				<source>Additional Header</source>
 			</trans-unit>
 			<trans-unit id="field.additional_resume_items">
-				<source>Additional Resume sections</source>
+				<source>Additional resume sections</source>
 			</trans-unit>
 
 			

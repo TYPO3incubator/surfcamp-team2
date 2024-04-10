@@ -8,30 +8,28 @@ $boot = static function (): void {
         'tt_content',
         'CType',
         [
-            'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.introduction_card',
-            'introduction_card',
-            'icon_intro'
+            'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.services',
+            'services',
+            'icon_services'
         ],
         '--div--',
         'after'
     );
 
-    if (empty($GLOBALS['TCA']['tt_content']['types']['introduction_card'])) {
-        $GLOBALS['TCA']['tt_content']['types']['introduction_card'] = [];
+    if (empty($GLOBALS['TCA']['tt_content']['types']['services'])) {
+        $GLOBALS['TCA']['tt_content']['types']['services'] = [];
     }
 
-    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['introduction_card'] = 'icon_intro';
+    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['services'] = 'icon_skills';
 
-    $GLOBALS['TCA']['tt_content']['types']['introduction_card'] = array_replace_recursive(
-        $GLOBALS['TCA']['tt_content']['types']['introduction_card'],
+    $GLOBALS['TCA']['tt_content']['types']['services'] = array_replace_recursive(
+        $GLOBALS['TCA']['tt_content']['types']['services'],
         [
             'showitem' => '
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
                 header,
-                bodytext,
-                link,
-                link_text,
-                image,
+                subheader,
+                services,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
                 --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
                 --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.access,
@@ -44,20 +42,22 @@ $boot = static function (): void {
                         'required' => true,
                     ]
                 ],
-                'bodytext' => [
-                    'config' => [
-                        'enableRichtext' => true,
-                        'richtextConfiguration' => 'minimal'
-                    ]
-                ],
-                'image' => [
-                    'config' => [
-                        'maxitems' => 1
-                    ]
-                ]
             ]
         ]
     );
+
+    $GLOBALS['TCA']['tt_content']['columns']['services'] = [
+        'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.services',
+        'config' => [
+            'type' => 'inline',
+            'foreign_table' => 'tx_portfolio_service',
+            'foreign_field' => 'parent',
+            'foreign_sortby' => 'sorting',
+            'appearance' => [
+                'useSortable' => true
+            ],
+        ]
+    ];
 };
 
 $boot();

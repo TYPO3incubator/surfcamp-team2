@@ -60,6 +60,10 @@
 				<source>Resume sections</source>
 				<target>Lebenslaufabschnitte</target>
 			</trans-unit>
+			<trans-unit id="content_element.services">
+				<source>Services</source>
+				<target>Services</target>
+			</trans-unit>
 
 			<trans-unit id="field.link">
 				<source>Link</source>
@@ -89,13 +93,17 @@
 				<source>Institution</source>
 				<target>Institution</target>
 			</trans-unit>
+			<trans-unit id="field.name">
+				<source>Name</source>
+				<target>Name</target>
+			</trans-unit>
 
 			<trans-unit id="field.additional_header">
 				<source>Additional Header</source>
 				<target>Zusätzlicher Header</target>
 			</trans-unit>
 			<trans-unit id="field.additional_resume_items">
-				<source>Additional Resume sections</source>
+				<source>Additional resume sections</source>
 				<target>Zusätzliche Lebenslaufabschnitte</target>
 			</trans-unit>
 
