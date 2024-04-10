@@ -1,10 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<html
+    data-namespace-typo3-fluid="true"
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+>
 
-</body>
+<f:comment>
+    <!--
+        <f:render partial="Content/Components/Atoms/Button" arguments="{
+            text: string,
+            link: string (optional),
+            secondary: bool (optional),
+        }" />
+    -->
+</f:comment>
+
+<f:if condition="{link}">
+    <f:then>
+        <f:link.typolink parameter="{link}" class="button {f:if(condition: '{secondar}')}">
+            {text}
+        </f:link.typolink>
+    </f:then>
+    <f:else>
+        <button class="button">
+            {text}
+        </button>
+    </f:else>
+</f:if>
+
 </html>
