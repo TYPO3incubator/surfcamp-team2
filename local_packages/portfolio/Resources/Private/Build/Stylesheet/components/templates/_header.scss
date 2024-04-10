@@ -1,0 +1,25 @@
+.header{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu{
+    position: absolute;
+    right: -100%;
+    visibility: hidden;
+    opacity: 0;
+    @include breakpoint-up(md){
+      position: static;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__mobile-toggle{
+    display: block;
+    @include breakpoint-up(md){
+      display: none;
+    }
+  }
+}

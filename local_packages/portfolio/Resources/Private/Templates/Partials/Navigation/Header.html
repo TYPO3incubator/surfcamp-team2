@@ -1,12 +1,19 @@
-<f:for each="{headerMenu}" as="item">
-    <f:if condition="{item.link}">
-        <f:if condition="{item.active}">
-            <f:then>
-                <a href="{item.link}" title="{item.title}">{item.title}</a>
-            </f:then>
-            <f:else>
-                <a href="{item.link}" title="{item.title}" class="inactive">{item.title}</a>
-            </f:else>
-        </f:if>
-    </f:if>
-</f:for>
+<html
+        data-namespace-typo3-fluid="true"
+        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+>
+
+<header class="header">
+    <div class="header__logo">Logo Placeholder</div>
+
+    <f:render partial="Content/Molecules/MenuList" arguments="{
+        menu: headerMenu,
+        classes: 'header__menu '
+    }" />
+
+    <div class="header__mobile-toggle">
+        Button
+    </div>
+
+</header>
+</html>
