@@ -1,4 +1,18 @@
 .footer{
   display: flex;
   justify-content: space-between;
+  padding: $size-12;
+
+  @include breakpoint-up(md){
+    padding: $size-16;
+  }
+
+  &__menu{
+    .menu__list{
+      gap: $size-16;
+      li{
+        border-right: $size-1 solid var(--color-base-text-secondary);
+      }
+    }
+  }
 }
