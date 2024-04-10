@@ -1,3 +1,1 @@
 @import 'EXT:portfolio/Configuration/Sets/Base/PageTS/*'
-@import 'EXT:portfolio/Configuration/Sets/Base/PageTS/ContentElements/*'
-

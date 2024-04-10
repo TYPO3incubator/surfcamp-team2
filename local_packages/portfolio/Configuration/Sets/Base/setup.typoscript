@@ -1,4 +1,13 @@
+@import 'EXT:form/Configuration/TypoScript/*'
+
 @import 'EXT:portfolio/Configuration/Sets/Base/Typoscript/*'
 @import 'EXT:portfolio/Configuration/Sets/Base/Typoscript/Lib/*'
 @import 'EXT:portfolio/Configuration/Sets/Base/Typoscript/Navigation/*'
 @import 'EXT:portfolio/Configuration/Sets/Base/Typoscript/ContentElements/*'
+
+
+form_formframework =< lib.content
+form_formframework.20 = EXTBASEPLUGIN
+form_formframework.20.extensionName = Form
+form_formframework.20.pluginName = Formframework
+form_formframework.templateName = Generic
