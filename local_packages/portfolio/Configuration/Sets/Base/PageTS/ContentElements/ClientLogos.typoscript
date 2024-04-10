@@ -1,0 +1,12 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements.client_logos {
+        iconIdentifier = icon_clients
+        title = LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.client_logos
+        description = LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.client_logos.description
+        tt_content_defValues {
+            CType = client_logos
+        }
+    }
+
+    show := addToList(client_logos)
+}

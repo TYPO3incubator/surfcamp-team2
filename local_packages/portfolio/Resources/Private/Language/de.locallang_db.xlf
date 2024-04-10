@@ -64,6 +64,18 @@
 				<source>Services</source>
 				<target>Services</target>
 			</trans-unit>
+			<trans-unit id="content_element.services.description">
+				<source>A element to present all provided services</source>
+				<target>Ein Element zur Präsentation der angebotenen Services</target>
+			</trans-unit>
+			<trans-unit id="content_element.client_logos">
+				<source>Client Logos</source>
+				<target>Kundenlogos</target>
+			</trans-unit>
+			<trans-unit id="content_element.client_logos.description">
+				<source>A element to present all logos of a list of clients</source>
+				<target>Ein Element zur Präsentation aller Logos einer Liste von Kunden</target>
+			</trans-unit>
 
 			<trans-unit id="field.link">
 				<source>Link</source>
@@ -96,6 +108,10 @@
 			<trans-unit id="field.name">
 				<source>Name</source>
 				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="field.image">
+				<source>Image</source>
+				<target>Bild</target>
 			</trans-unit>
 
 			<trans-unit id="field.additional_header">
