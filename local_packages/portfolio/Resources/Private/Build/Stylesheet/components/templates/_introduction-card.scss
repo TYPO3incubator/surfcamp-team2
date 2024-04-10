@@ -29,7 +29,7 @@
 
         .content {
             --text-color: var(--color-base-text-secondary);
-            --font-size: #{$font-24};
+            --font-size: #{$font-18};
 
             &:not(:last-child) {
                 margin-bottom: $size-32;
@@ -38,6 +38,14 @@
     }
 
     @include breakpoint-up(md) {
+        &__content {
+            .content {
+                --font-size: #{$font-24};
+            }
+        }
+    }
+
+    @include breakpoint-up(lg) {
         &__image {
             margin-bottom: 0;
         }
