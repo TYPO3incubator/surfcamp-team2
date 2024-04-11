@@ -1,1 +1,14 @@
-<f:format.html>{data.bodytext}</f:format.html>
+<div class="section ce-text">
+    <div class="container">
+        <div class="row">
+            <div class="col sm-12 md-offset-2 md-8 xl-offset-3 xl-6">
+                <f:render partial="Content/Molecules/HeadlineCopytext" arguments="{
+                    headline: data.header,
+                    headlinePosition: data.header_position,
+                    headlineTag: data.header_layout,
+                    bodytext: data.bodytext
+                }"/>
+            </div>
+        </div>
+    </div>
+</div>
