@@ -97,16 +97,16 @@ h6,.h6 {
     h3,.h3,
     h4,.h4,
     h5,.h5 {
-        margin-top: $size-32;
-        margin-bottom: $size-24;
+        margin-top: $size-24;
+        margin-bottom: $size-20;
         display: block;
 
         @include first-no-margin('top');
         @include last-no-margin('bottom');
 
         @include breakpoint-up(md) {
-            margin-top: $size-24;
-            margin-bottom: $size-32;
+            margin-top: $size-32;
+            margin-bottom: $size-24;
         }
     }
 }

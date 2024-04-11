@@ -1,0 +1,10 @@
+.ce-text {
+    &.ce-text.ce-text {
+        background-color: var(--color-base-background);
+    }
+
+    +.ce-media,
+    + .ce-text {
+        margin-top: calc(-1 * var(--spacer-lg));
+    }
+}

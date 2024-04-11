@@ -214,3 +214,11 @@
 [hidden][hidden][hidden] {
     display: none;
 }
+
+.lead.lead {
+    font-size: $font-24;
+}
+
+.text-muted.text-muted {
+    color: var(--color-base-text-secondary);
+}
