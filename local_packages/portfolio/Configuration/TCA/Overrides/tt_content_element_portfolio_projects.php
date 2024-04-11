@@ -25,6 +25,7 @@ $GLOBALS['TCA']['tt_content']['types']['portfolio_projects'] = [
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
         header,
         header_layout,
+        subheader,
         pages,
         recursive,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
