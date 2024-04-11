@@ -1,5 +1,5 @@
-tt_content.portfolio_project =< lib.content
-tt_content.portfolio_project {
+tt_content.portfolio_projects =< lib.content
+tt_content.portfolio_projects {
     templateName = Generic
     20 = EXTBASEPLUGIN
     20 {
