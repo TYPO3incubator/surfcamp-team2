@@ -1,4 +1,6 @@
 base: '%env(TYPO3_BASE_URL)%'
+dependencies:
+  - surfcamp/base
 errorHandling:
   -
     errorCode: 404
@@ -22,6 +24,4 @@ languages:
     navigationTitle: Deutsch
     flag: de
 rootPageId: 1
-routes: {  }
-dependencies:
-  - surfcamp/base
+websiteTitle: 'Marvi Website'
