@@ -84,8 +84,15 @@
 				<source>A element to present all projects including details</source>
 				<target>Ein Element zum Anzeigen aller Projekte inkl. Detailseite</target>
 			</trans-unit>
-			
-
+			<trans-unit id="content_element.project_teaser">
+				<source>Projects Teaser</source>
+				<target>Projekt Teaser</target>
+			</trans-unit>
+			<trans-unit id="content_element.project_teaser.description">
+				<source>A element to present the latest projects</source>
+				<target>Ein Element zum Anteasern der letzten Projekte</target>
+			</trans-unit>
+		
 			<trans-unit id="field.link">
 				<source>Link</source>
 				<target>Link</target>
