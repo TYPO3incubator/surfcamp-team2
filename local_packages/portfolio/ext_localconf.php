@@ -28,7 +28,7 @@ $boot = static function (): void {
 
     ExtensionUtility::configurePlugin(
         'Portfolio',
-        'Project',
+        'Projects',
         [
             \Surfcamp\Portfolio\Controller\ProjectController::class => 'list, show',
         ],

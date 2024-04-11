@@ -1,0 +1,7 @@
+<h1>{project.title}</h1>
+<f:debug inline="1">{_all}</f:debug>
+<f:for each="{project.images}" as="image">
+    <f:if condition="{image}">
+        <f:image image="{image}" />
+    </f:if>
+</f:for>

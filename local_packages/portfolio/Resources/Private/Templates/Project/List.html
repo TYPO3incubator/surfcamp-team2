@@ -1,12 +1,11 @@
-<f:layout name="Default" />
-<f:section name="Main">
+
     <ul>
         <f:for each="{projects}" as="project">
             <li>
-                <f:link.action action="show" arguments="{project: project}">
-                    {project.title}
+                <f:link.action action="show" arguments="{project: project}" style="color: white;">
+                    {project.title}<br>
+                    {project.description}
                 </f:link.action>
             </li>
         </f:for>
     </ul>
-</f:section>

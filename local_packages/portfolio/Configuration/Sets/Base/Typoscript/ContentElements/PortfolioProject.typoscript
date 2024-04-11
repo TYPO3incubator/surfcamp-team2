@@ -1,5 +1,9 @@
 tt_content.portfolio_project =< lib.content
-tt_content.portfolio_project.20 = EXTBASEPLUGIN
-tt_content.portfolio_project.20.extensionName = Portfolio
-tt_content.portfolio_project.20.pluginName = Projects
-tt_content.portfolio_project.templateName = Generic
+tt_content.portfolio_project {
+    templateName = Generic
+    20 = EXTBASEPLUGIN
+    20 {
+        extensionName = Portfolio
+        pluginName = Projects
+    }
+}

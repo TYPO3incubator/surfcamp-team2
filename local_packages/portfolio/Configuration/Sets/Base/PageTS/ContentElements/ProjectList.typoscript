@@ -1,12 +1,12 @@
 mod.wizards.newContentElement.wizardItems.common {
-    elements.list {
+    elements.portfolio_project {
         iconIdentifier = icon_project
-        title = LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.project_list
-        description = LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.project_list.description
+        title = LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.project_portfolio
+        description = LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.project_portfolio.description
         tt_content_defValues {
-            CType = list
+            CType = portfolio_project
         }
     }
 
-    show := addToList(list)
+    show := addToportfolio_project(portfolio_project)
 }

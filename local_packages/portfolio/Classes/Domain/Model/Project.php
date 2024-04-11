@@ -1,42 +1,106 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Surfcamp\Portfolio\Domain\Model;
 
+use TYPO3\CMS\Extbase\Domain\Model\FileReference;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
 
 class Project extends AbstractEntity
 {
-    /**
-     * @var string
-     */
-    protected $title = '';
+    protected string $title = '';
+
+    protected string $description = '';
 
     /**
-     * @var string
-     */
-    protected $description = '';
-
-    /**
-     * @var ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
-     * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
+     * @var ObjectStorage<FileReference>
      */
     protected $images;
 
     /**
-     * @var string
+     * @var ObjectStorage<Link>
      */
-    protected $links = '';
+    protected $links;
 
-    /**
-     * @var bool
-     */
-    protected $showDetailPage = false;
+    protected bool $showDetailPage = false;
 
     public function __construct()
     {
         $this->images = new ObjectStorage();
+        $this->links = new ObjectStorage();
     }
 
-    // Getters and setters here
+    public function getTitle(): string
+    {
+        return $this->title;
+    }
+
+    public function setTitle(string $title): void
+    {
+        $this->title = $title;
+    }
+
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(string $description): void
+    {
+        $this->description = $description;
+    }
+
+    public function getShowDetailPage(): bool
+    {
+        return $this->showDetailPage;
+    }
+
+    public function setShowDetailPage(bool $showDetailPage): void
+    {
+        $this->showDetailPage = $showDetailPage;
+    }
+
+    public function getImages(): ObjectStorage
+    {
+        return $this->images;
+    }
+
+    public function setImages(ObjectStorage $images): void
+    {
+        $this->images = $images;
+    }
+
+    public function addImage(FileReference $image): void
+    {
+        $this->images->attach($image);
+    }
+    
+    public function removeImage(FileReference $image): void
+    {
+        $this->images->detach($image);
+    }
+
+    public function getLinks(): ObjectStorage
+    {
+        return $this->links;
+    }
+
+    public function setLinks(ObjectStorage $links): void
+    {
+        $this->links = $links;
+    }
+
+    public function addLink(Link $link)
+    {
+        $this->links->attach($link);
+    }
+
+    public function removeLink(Link $linkToRemove)
+    {
+        $this->links->detach($linkToRemove);
+    }
+
+
 }

@@ -97,14 +97,20 @@
 			<trans-unit id="field.additional_resume_items">
 				<source>Additional resume sections</source>
 			</trans-unit>
+			<trans-unit id="field.links">
+				<source>Links</source>
+			</trans-unit>
+			<trans-unit id="field.showDetailPage">
+				<source>Show detail page</source>
+			</trans-unit>
 
 			<trans-unit id="tx_portfolio_domain_model_project">
 				<source>Project</source>
 			</trans-unit>
-			<trans-unit id="content_element.project_list">
+			<trans-unit id="content_element.project_portfolio">
 				<source>Project Listing</source>
 			</trans-unit>
-			<trans-unit id="content_element.project_list.description">
+			<trans-unit id="content_element.project_portfolio.description">
 				<source>A element for displaying all projects</source>
 			</trans-unit>
 			

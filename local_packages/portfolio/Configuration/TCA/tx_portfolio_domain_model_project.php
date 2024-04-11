@@ -1,5 +1,7 @@
 <?php
 
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:tx_portfolio_domain_model_project',
@@ -18,6 +20,9 @@ return [
         '1' => ['showitem' => '
             --palette--;;paletteMain,
             description,
+            show_detail_page,
+            links,
+            images, 
         '],
     ],
     'palettes' => [
@@ -52,10 +57,39 @@ return [
             'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.description',
             'config' => [
                 'type' => 'text',
-                'cols' => 40,
-                'rows' => 15,
+                'enableRichtext' => true,
             ],
         ],
-
+        'show_detail_page' => [
+            'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.showDetailPage',
+            'config' => [
+                'type' => 'check',
+                'default' => false,
+            ],
+        ],
+        'links' => [
+            'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.links',
+            'config' => [
+                'type' => 'inline',
+                'foreign_table' => 'tx_portfolio_domain_model_link',
+                'foreign_field' => 'parent',
+                'maxitems' => 10,
+                'appearance' => [
+                    'collapseAll' => true,
+                    'expandSingle' => true,
+                    'useSortable' => true,
+                ],
+            ],
+        ],
+        'images' => [
+            'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.image',
+            'config' => [
+                'type' => 'inline',
+                'foreign_field' => 'parent',
+                'foreign_table' => 'sys_file_reference',
+                'allowed' => 'common-media-types',
+                'maxitems' => 10
+            ],
+        ],
     ],
 ];

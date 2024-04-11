@@ -117,6 +117,14 @@
 				<source>Image</source>
 				<target>Bild</target>
 			</trans-unit>
+			<trans-unit id="field.links">
+				<source>Links</source>
+				<target>Links</target>
+			</trans-unit>
+			<trans-unit id="field.showDetailPage">
+				<source>Show detail page</source>
+				<target>Detailseite anzeigen</target>
+			</trans-unit>
 
 			<trans-unit id="field.additional_header">
 				<source>Additional Header</source>
@@ -131,11 +139,11 @@
 				<source>Project</source>
 				<target>Projekt</target>
 			</trans-unit>
-			<trans-unit id="content_element.project_list">
+			<trans-unit id="content_element.project_portfolio">
 				<source>Project Listing</source>
 				<target>Projekt Liste</target>
 			</trans-unit>
-			<trans-unit id="content_element.project_list.description">
+			<trans-unit id="content_element.project_portfolio.description">
 				<source>A element for displaying all projects</source>
 				<target>Ein Element zum Anzeigen aller Projekte</target>
 			</trans-unit>
