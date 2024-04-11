@@ -6,7 +6,14 @@
 
 	<f:if condition="{showReadMore}">
 		<f:then>
-			<f:link.action action="show" arguments="{project: project}" class="link">
+			<f:link.action 
+				action="show"
+				arguments="{project: project}"
+				extensionName="Portfolio"
+				controller="Project"
+				pluginName="Projects"
+				pageUid="{detailPid}"
+				class="link">
 				Read More
 			</f:link.action>
 		</f:then>

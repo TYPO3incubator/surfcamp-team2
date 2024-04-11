@@ -1,3 +1,7 @@
+config:
+  projects:
+    detailPid: 9
+    storagePid: 8
 socials:
   showInFooter: false
   showInHeader: false

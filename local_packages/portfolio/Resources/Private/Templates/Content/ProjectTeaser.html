@@ -1,19 +1,23 @@
-<h1>Project Teaser</h1>
-<h1>{data.header}</h1>
-<p>{data.subheader}</p>
-<f:link.typolink parameter="{data.link}">{data.link_text}</f:link.typolink>
-<f:for each="{projects}" as="project">
-    <h2>{project.data.title}</h2>
-    <p>{project.data.description}</p>
-    <p>{project.data.uid}
-    <f:link.action action="show"
-        arguments="{project: project.data.uid}"
-        extensionName="portfolio"
-        pluginName="portfolio_projects"
-        controller="Project"
-        pageUid="16"
-        class="link">
-        Read More
-    </f:link.action>
-</f:for>
+<div class="project-list section">
+    <div class="container">
+        <h1>Project Teaser</h1>
+        <h1>{data.header}</h1>
+        <p>{data.subheader}</p>
+        <f:link.typolink parameter="{data.link}">{data.link_text}</f:link.typolink>
+        
+        <div class="row">
+            <f:for each="{projects}" as="project">
+                <f:render partial="Content/Atoms/Card" arguments="{
+                    title: project.data.title,
+                    description: project.data.description,
+                    showReadMore: project.data.show_detail_page,
+                    link: project.data,
+                    project: project.data.uid,
+                    detailPid: detailPid
+                }"/>
+            </f:for>
+        </div>
+    </div>
+</div>
+
 
