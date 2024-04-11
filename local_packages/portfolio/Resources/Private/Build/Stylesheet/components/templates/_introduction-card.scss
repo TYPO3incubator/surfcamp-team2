@@ -21,6 +21,8 @@
     }
 
     &__content {
+        text-align: center;
+
         .headline {
             &:not(:last-child) {
                 margin-bottom: $size-12;
@@ -46,6 +48,10 @@
     }
 
     @include breakpoint-up(lg) {
+        &__content {
+            text-align: left;
+        }
+
         &__image {
             margin-bottom: 0;
         }

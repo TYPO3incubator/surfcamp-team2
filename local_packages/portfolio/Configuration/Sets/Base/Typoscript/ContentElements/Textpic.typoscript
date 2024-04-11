@@ -1,6 +1,6 @@
 tt_content.textpic =< lib.content
 tt_content.textpic {
-    templateName = Text
+    templateName = Textpic
 
     dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor

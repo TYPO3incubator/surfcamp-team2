@@ -60,11 +60,12 @@ body {
   small, .small {
     display: inline-block;
     font-size: $font-14;
-    color: var(--color-base-text);
     margin-top: $size-12;
+    color: var(--color-base-text-secondary);
+    line-height: 1.25;
 
     @include breakpoint-up(md) {
-      margin-top: $size-24;
+      margin-top: $size-16;
     }
   }
 

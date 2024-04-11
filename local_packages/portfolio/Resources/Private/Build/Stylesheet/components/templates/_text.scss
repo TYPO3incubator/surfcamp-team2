@@ -3,7 +3,8 @@
         background-color: var(--color-base-background);
     }
 
-    +.ce-media,
+    + .ce-image,
+    + .ce-text-image,
     + .ce-text {
         margin-top: calc(-1 * var(--spacer-lg));
     }

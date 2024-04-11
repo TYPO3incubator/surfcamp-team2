@@ -3,13 +3,13 @@
         <div class="row">
             <f:if condition="{resume_items.0} && {additional_resume_items.0}">
                 <f:then>
-                    <div class="col sm-12 md-offset-1 md-5 lg-offset-2 lg-4">
+                    <div class="col sm-12 md-6 lg-offset-1 lg-5 xl-offset-2 xl-4">
                         <f:render section="RowContent" arguments="{
                             headline: data.header,
                             list: resume_items
                         }" />
                     </div>
-                    <div class="col sm-12 md-5 lg-4">
+                    <div class="col sm-12 md-6 lg-5 xl-4">
                         <f:render section="RowContent" arguments="{
                             headline: data.additional_header,
                             list: additional_resume_items
@@ -17,7 +17,7 @@
                     </div>
                 </f:then>
                 <f:else>
-                    <div class="col sm-12 md-offset-2 md-10 lg-offset-2 lg-8 xl-offset-3 xl-6">
+                    <div class="col sm-12 md-offset-1 md-10 lg-offset-2 lg-8 xl-offset-3 xl-6">
                         <f:if condition="{resume_items.0}">
                             <f:then>
                                 <f:render section="RowContent" arguments="{
@@ -32,7 +32,6 @@
                                 }" />
                             </f:else>
                         </f:if>
-
                     </div>
                 </f:else>
             </f:if>
