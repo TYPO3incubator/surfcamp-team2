@@ -1,0 +1,12 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements.list {
+        iconIdentifier = icon_project
+        title = LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.project_list
+        description = LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.project_list.description
+        tt_content_defValues {
+            CType = list
+        }
+    }
+
+    show := addToList(list)
+}

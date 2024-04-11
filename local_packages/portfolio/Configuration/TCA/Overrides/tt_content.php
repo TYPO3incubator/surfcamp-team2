@@ -37,3 +37,9 @@ $boot = static function (): void {
 
 $boot();
 unset($boot);
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+    'Portfolio',
+    'Project',
+    'Projects',
+);

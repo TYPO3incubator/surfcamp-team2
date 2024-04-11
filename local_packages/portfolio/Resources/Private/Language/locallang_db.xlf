@@ -84,6 +84,9 @@
 			<trans-unit id="field.name">
 				<source>Name</source>
 			</trans-unit>
+			<trans-unit id="field.title">
+				<source>Title</source>
+			</trans-unit>
 			<trans-unit id="field.image">
 				<source>Image</source>
 			</trans-unit>
@@ -95,6 +98,16 @@
 				<source>Additional resume sections</source>
 			</trans-unit>
 
+			<trans-unit id="tx_portfolio_domain_model_project">
+				<source>Project</source>
+			</trans-unit>
+			<trans-unit id="content_element.project_list">
+				<source>Project Listing</source>
+			</trans-unit>
+			<trans-unit id="content_element.project_list.description">
+				<source>A element for displaying all projects</source>
+			</trans-unit>
+			
 			
 		</body>
 	</file>

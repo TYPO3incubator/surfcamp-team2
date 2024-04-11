@@ -109,6 +109,10 @@
 				<source>Name</source>
 				<target>Name</target>
 			</trans-unit>
+			<trans-unit id="field.title">
+				<source>Title</source>
+				<target>Titel</target>
+			</trans-unit>
 			<trans-unit id="field.image">
 				<source>Image</source>
 				<target>Bild</target>
@@ -121,6 +125,19 @@
 			<trans-unit id="field.additional_resume_items">
 				<source>Additional resume sections</source>
 				<target>Zusätzliche Lebenslaufabschnitte</target>
+			</trans-unit>
+
+			<trans-unit id="tx_portfolio_domain_model_project">
+				<source>Project</source>
+				<target>Projekt</target>
+			</trans-unit>
+			<trans-unit id="content_element.project_list">
+				<source>Project Listing</source>
+				<target>Projekt Liste</target>
+			</trans-unit>
+			<trans-unit id="content_element.project_list.description">
+				<source>A element for displaying all projects</source>
+				<target>Ein Element zum Anzeigen aller Projekte</target>
 			</trans-unit>
 
 		</body>
