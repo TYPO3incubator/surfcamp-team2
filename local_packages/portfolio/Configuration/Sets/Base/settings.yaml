@@ -33,3 +33,18 @@ socials:
       link: ''
     tumblr:
       link: ''
+style:
+  variables:
+    primaryColor:
+      key: 'color-primary'
+      value: '#000000'
+    secondaryColor:
+      key: 'color-secondary'
+      value: '#000000'
+  data:
+    theme:
+      key: 'theme'
+      value: 'dark'
+    buttonBorderRadius:
+      key: 'button-border-radius'
+      value: 'none'
