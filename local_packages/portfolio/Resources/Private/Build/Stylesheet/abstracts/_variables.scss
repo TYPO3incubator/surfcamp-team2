@@ -13,9 +13,6 @@
     --color-base-text: #fff;
     --color-base-text-secondary: #e2e2e2;
     --color-button-text: #fff;
-
-    --font-headline-name: 'Roboto Slab';
-    --font-copytext-name: 'Roboto';
 }
 
 $body-bg-color:             var(--color-background);
@@ -42,8 +39,10 @@ $breakpoints: (
 );
 
 // * font families
-$font-family:                 var(--font-copytext-name), sans-serif;
-$font-family-heading:         var(--font-copytext-name), $font-family;
+@include css-root-vars {
+    --font-family-heading:         'Roboto Slab', serif;
+    --font-family-copytext:        'Roboto', sans-serif;
+}
 
 // * font-weights
 $font-light:            300;
