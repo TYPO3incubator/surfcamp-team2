@@ -33,12 +33,12 @@ $GLOBALS['TCA']['tt_content']['columns']['link_text'] = [
 ];
 
 call_user_func(static function () {
-
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
         'Portfolio',
         'Projects',
-        'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.portfolio_project',
-        'icon_project'
+        'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.portfolio_projects',
+        'icon_project',
+        'default',
+        'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.portfolio_projects.description',
     );
-
 });
