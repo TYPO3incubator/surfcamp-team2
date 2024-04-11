@@ -1,6 +1,23 @@
-<div>
-    <h2>{data.header}</h2>
-    <p>{data.subheader}</p>
-    <p>{data.show_progress_level}</p>
-    <f:debug inline="1">{_all}</f:debug>
+<div class="section ce-skill-display">
+	<div class="container">
+		<h2>{data.header}</h2>
+		<p>{data.subheader}</p>
+		<div class="container ce-skill-display__list">
+			<f:for each="{skills}" as="skill">
+				<f:if condition="{data.show_progress_level}">
+					<f:then>
+						<f:render partial="Content/Atoms/ProgressBar" arguments="{
+							label: skill.data.name,
+							value: skill.data.progress_level,
+						}" />
+					</f:then>
+					<f:else>
+						<f:render partial="Content/Atoms/Pill" arguments="{
+							text: skill.data.name
+						}" />
+					</f:else>
+				</f:if>
+			</f:for>
+		</div>
+	</div>
 </div>
