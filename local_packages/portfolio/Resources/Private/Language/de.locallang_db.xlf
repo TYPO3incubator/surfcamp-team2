@@ -76,6 +76,15 @@
 				<source>A element to present all logos of a list of clients</source>
 				<target>Ein Element zur Präsentation aller Logos einer Liste von Kunden</target>
 			</trans-unit>
+			<trans-unit id="content_element.portfolio_project">
+				<source>Projects</source>
+				<target>Projekte</target>
+			</trans-unit>
+			<trans-unit id="content_element.portfolio_project.description">
+				<source>A element to present all projects including details</source>
+				<target></target>
+			</trans-unit>
+			
 
 			<trans-unit id="field.link">
 				<source>Link</source>

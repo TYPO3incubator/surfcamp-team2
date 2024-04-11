@@ -59,6 +59,13 @@
 			<trans-unit id="content_element.client_logos.description">
 				<source>A element to present all logos of a list of clients</source>
 			</trans-unit>
+			<trans-unit id="content_element.portfolio_project">
+				<source>Projects</source>
+			</trans-unit>
+			<trans-unit id="content_element.portfolio_project.description">
+				<source>A element to present all projects including details</source>
+			</trans-unit>
+			
 
 			<trans-unit id="field.link">
 				<source>Link</source>
