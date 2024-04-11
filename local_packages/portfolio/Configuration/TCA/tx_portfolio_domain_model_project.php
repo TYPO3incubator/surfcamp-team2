@@ -23,6 +23,7 @@ return [
             show_detail_page,
             links,
             images, 
+            categories,
         '],
     ],
     'palettes' => [

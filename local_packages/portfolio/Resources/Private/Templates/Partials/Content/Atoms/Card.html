@@ -1,0 +1,14 @@
+<div class="card__wrapper">
+	<h5 class="card__headline">{title}</h5>
+	<div class="card__description">
+		{description -> f:format.html()}
+	</div>
+
+	<f:if condition="{showReadMore}">
+		<f:then>
+			<f:link.action action="show" arguments="{project: project}" class="link">
+				Read More
+			</f:link.action>
+		</f:then>
+	</f:if>
+</div>

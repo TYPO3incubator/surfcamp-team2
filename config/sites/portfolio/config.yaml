@@ -24,4 +24,5 @@ languages:
     navigationTitle: Deutsch
     flag: de
 rootPageId: 1
-websiteTitle: 'Marvi Website'
+websiteTitle: 'Ben Muster'
+routes: {  }
