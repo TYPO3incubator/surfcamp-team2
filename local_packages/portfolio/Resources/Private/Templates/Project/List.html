@@ -2,10 +2,16 @@
     <ul>
         <f:for each="{projects}" as="project">
             <li>
-                <f:link.action action="show" arguments="{project: project}" style="color: white;">
-                    {project.title}<br>
-                    {project.description}
-                </f:link.action>
+                <f:if condition="{project.showDetailPage}">
+                    <f:then>
+                        <f:link.action action="show" arguments="{project: project}" style="color: white;">
+                            {project.title}<br>
+                        </f:link.action>
+                    </f:then>
+                    <f:else>
+                        {project.title}<br>
+                    </f:else>
+                </f:if>
             </li>
         </f:for>
     </ul>
