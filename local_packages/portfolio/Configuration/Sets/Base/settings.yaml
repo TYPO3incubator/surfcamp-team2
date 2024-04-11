@@ -2,33 +2,34 @@ socials:
   showInFooter: false
   showInHeader: false
   showActionButtons: true
-  facebook:
-    link: 'https://www.facebook.com/'
-  instagram:
-    link: 'https://www.instagram.com/'
-  threads:
-    link: ''
-  whatsapp:
-    link: ''
-  youtube:
-    link: ''
-  vimeo:
-    link: ''
-  xing:
-    link: 'https://www.xing.com/'
-  linkedin:
-    link: ''
-  pinterest:
-    link: ''
-  snapchat:
-    link: ''
-  tiktok:
-    link: ''
-  reddit:
-    link: 'https://www.reddit.com/'
-  x:
-    link: ''
-  twitch:
-    link: ''
-  tumblr:
-    link: ''
+  channels:
+    facebook:
+      link: 'https://www.facebook.com/'
+    instagram:
+      link: 'https://www.instagram.com/'
+    threads:
+      link: ''
+    whatsapp:
+      link: ''
+    youtube:
+      link: ''
+    vimeo:
+      link: ''
+    xing:
+      link: 'https://www.xing.com/'
+    linkedin:
+      link: ''
+    pinterest:
+      link: ''
+    snapchat:
+      link: ''
+    tiktok:
+      link: ''
+    reddit:
+      link: 'https://www.reddit.com/'
+    x:
+      link: ''
+    twitch:
+      link: ''
+    tumblr:
+      link: ''
