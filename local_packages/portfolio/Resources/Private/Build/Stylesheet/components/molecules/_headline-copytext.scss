@@ -1,0 +1,16 @@
+.headline-copytext {
+    margin-bottom: $size-48;
+    @include last-no-margin('bottom');
+
+    .headline {
+        margin-bottom: $size-24;
+        @include last-no-margin('bottom');
+    }
+
+    @include breakpoint-up(md) {
+        .headline {
+            margin-bottom: $size-48;
+            @include last-no-margin('bottom');
+        }
+    }
+}
