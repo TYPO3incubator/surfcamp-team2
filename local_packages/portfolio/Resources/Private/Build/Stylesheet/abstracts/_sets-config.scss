@@ -1,4 +1,7 @@
 @include css-root-vars() {
+    // Set by user
+    --color-primary: #ff854d;
+    --color-secondary: #fac516;
     // Current Variables set inside the style tag
 /*
         --color-primary: #ff854d;
