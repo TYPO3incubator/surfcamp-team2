@@ -1,12 +1,16 @@
-tt_content.introduction_card =< lib.content
-tt_content.introduction_card {
+tt_content.project_teaser =< lib.content
+tt_content.project_teaser {
     templateName = ProjectTeaser
 
     dataProcessing {
-        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
         10 {
-            references.fieldName = image
-            as = image
+            table = tx_portfolio_domain_model_project
+            pidInList {
+                field = pages
+            }
+            orderBy = crdate DESC
+            as = projects
         }
     }
 }
