@@ -4,12 +4,12 @@
 
 // * CSS variables semantics
 @include css-root-vars() {
-    --color-primary: #fa5e16;
-    --color-secondary: #fac516;
+    --color-primary: #75df91;
+    --color-secondary: color-mix(in srgb,var(--color-primary), currentColor 20%);
     --color-base-background: #444;
     --color-base-text: #fff;
     --color-base-text-secondary: #e2e2e2;
-    --color-button-text: #e5e5e5;
+    --color-button-text: #ffffff;
     --color-section-background-light: #585858;
     --color-section-background-dark: #444;
     --font-copytext-name: 'Roboto';
