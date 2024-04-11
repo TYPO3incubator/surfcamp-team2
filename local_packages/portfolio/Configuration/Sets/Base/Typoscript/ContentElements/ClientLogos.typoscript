@@ -1,6 +1,6 @@
 tt_content.client_logos < lib.content
 tt_content.client_logos {
-    templateName = ClientLogos.html
+    templateName = ClientLogos
 
     dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor

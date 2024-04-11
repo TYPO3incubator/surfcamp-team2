@@ -30,10 +30,10 @@ $boot = static function (): void {
         'Portfolio',
         'Projects',
         [
-            \Surfcamp\Portfolio\Controller\ProjectController::class => 'list, show',
+            \Surfcamp\Portfolio\Controller\ProjectController::class => ['list', 'show'],
         ],
         [
-            \Surfcamp\Portfolio\Controller\ProjectController::class => 'list, show',
+            \Surfcamp\Portfolio\Controller\ProjectController::class => ['list', 'show'],
         ],
         ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
     );
