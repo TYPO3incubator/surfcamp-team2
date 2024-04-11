@@ -76,11 +76,11 @@
 				<source>A element to present all logos of a list of clients</source>
 				<target>Ein Element zur Präsentation aller Logos einer Liste von Kunden</target>
 			</trans-unit>
-			<trans-unit id="content_element.portfolio_project">
+			<trans-unit id="content_element.portfolio_projects">
 				<source>Projects</source>
 				<target>Projekte</target>
 			</trans-unit>
-			<trans-unit id="content_element.portfolio_project.description">
+			<trans-unit id="content_element.portfolio_projects.description">
 				<source>A element to present all projects including details</source>
 				<target></target>
 			</trans-unit>
