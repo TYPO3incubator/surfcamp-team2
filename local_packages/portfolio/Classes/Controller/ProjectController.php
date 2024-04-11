@@ -22,6 +22,10 @@ class ProjectController extends ActionController
 
     public function showAction(Project $project): ResponseInterface
     {
+        if(!$project->getShowDetailPage()) {
+            throw new \TYPO3\CMS\Core\Exception('Project does not have a detail page');
+        }
+
         $this->view->assign('project', $project);
         return $this->htmlResponse();
     }
