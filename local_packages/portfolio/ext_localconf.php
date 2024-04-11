@@ -24,19 +24,19 @@ $boot = static function (): void {
                 }
             ')
         );
-
-        ExtensionUtility::configurePlugin(
-            'Portfolio',
-            'Project',
-            [
-                \Surfcamp\Portfolio\Controller\ProjectController::class => 'list, show',
-            ],
-            [
-                \Surfcamp\Portfolio\Controller\ProjectController::class => 'list, show',
-            ],
-            ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
-        );
     }
+
+    ExtensionUtility::configurePlugin(
+        'Portfolio',
+        'Project',
+        [
+            \Surfcamp\Portfolio\Controller\ProjectController::class => 'list, show',
+        ],
+        [
+            \Surfcamp\Portfolio\Controller\ProjectController::class => 'list, show',
+        ],
+        ExtensionUtility::PLUGIN_TYPE_CONTENT_ELEMENT
+    );
 };
 
 $boot();
