@@ -8,7 +8,7 @@
     --button-hover-bg-color: var(--color-secondary);
     --font-size: #{$font-18};
     --padding: #{$size-8} #{$size-16};
-    --button-border-radius: #{$size-48};
+    --radius: var(--button-border-radius);
 
     display: inline-block;
     cursor: pointer;
@@ -19,7 +19,7 @@
     font-size: var(--font-size);
     font-weight: $font-bold;
     transition: all $transition-timing-fast linear;
-    border-radius: var(--button-border-radius);
+    border-radius: var(--radius);
     text-decoration: none;
 
     @include interaction {
@@ -41,11 +41,11 @@
             --button-border-radius: 0;
         }
 
-        &--partly & {
-            --button-border-radius: #{$size-24};
+        &--rounded & {
+            --button-border-radius: #{$size-4};
         }
 
-        &--full & {
+        &--round & {
             --button-border-radius: #{$size-48};
         }
     }
