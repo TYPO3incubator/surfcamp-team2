@@ -1,0 +1,26 @@
+.project-list{
+  padding-inline: $size-24;
+  margin-bottom: -$size-24;
+
+  &__wrapper{
+    padding: $size-24;
+    background-color: var(--color-section-background-light);
+    border-radius: $size-20;
+    border: $size-1 solid var(--color-button-text);
+    margin-bottom: $size-24;
+  }
+
+  &__headline{
+    margin-bottom: $size-16;
+  }
+
+  &__description{
+    margin-bottom: $size-12;
+  }
+
+  .section:nth-child(even) & {
+    &__wrapper {
+      background-color: var(--color-section-background-dark);
+    }
+  }
+}
