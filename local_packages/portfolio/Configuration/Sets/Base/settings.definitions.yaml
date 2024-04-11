@@ -89,3 +89,43 @@ settings:
     description: 'Link to your Pinterest profile'
     type: string
     default: ''
+  style.variable.primaryColor.key:
+    label: 'Name for the primary color'
+    description: 'The name of the variable for the primary color'
+    type: string
+    default: 'color-primary'
+  style.variable.primaryColor.value:
+    label: 'Color of the primary color'
+    description: 'The color value for the primary color'
+    type: color
+    default: ''
+  style.variable.secondaryColor.key:
+    label: 'Name for the primary color'
+    description: 'The name of the variable for the primary color'
+    type: string
+    default: 'color-primary'
+  style.variable.secondaryColor.value:
+    label: 'Color of the secondary color'
+    description: 'The color value for the secondary color'
+    type: color
+    default: ''
+  style.data.theme.key:
+    label: 'Name for the theme data attribute'
+    description: 'The name of the variable for the theme data attribute'
+    type: string
+    default: 'theme'
+  style.data.theme.value:
+    label: 'Theme'
+    description: 'The chosen theme'
+    type: string
+    default: dark
+  style.data.buttonBorderRadius.key:
+    label: 'Name for the button border radius data attribute'
+    description: 'The name of the variable for the button border radius data attribute'
+    type: string
+    default: 'button-border-radius'
+  style.data.buttonBorderRadius.value:
+    label: 'Radius of the button border'
+    description: 'The radius of the button border'
+    type: string
+    default: none

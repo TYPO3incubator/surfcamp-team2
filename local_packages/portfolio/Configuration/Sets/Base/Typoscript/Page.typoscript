@@ -28,4 +28,16 @@ page {
     meta {
       viewport = width=device-width, minimum-scale=1.0, maximum-scale=5.0, initial-scale=1.0
     }
+
+    headerData {
+        100 = USER
+        100.userFunc = Surfcamp\Portfolio\UserFunctions\SetCss->getCssForHeader
+    }
+
+    bodyTagCObject = COA
+    bodyTagCObject {
+        10 = USER
+        10.userFunc = Surfcamp\Portfolio\UserFunctions\SetCss->getBodyDataModifier
+        wrap = <body|>
+    }
 }
