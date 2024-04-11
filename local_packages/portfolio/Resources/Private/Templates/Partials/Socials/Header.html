@@ -1,9 +1,3 @@
 <f:if condition="{settings.socials.showInHeader}">
-    <h1>Socials Header</h1>
-    <f:for each="{settings.socials}" as="socialItem" key="label">
-        <f:if condition="{socialItem.link}">
-            <f:comment>The Icons/Classes needs to be named like the key in die Base/settings.yaml</f:comment>
-            <a href="{socialItem.link}" title="{label}" class="{label}">{label}</a>
-        </f:if>
-    </f:for>
+    <f:render partial="Socials/SocialIcons" arguments="{ socials: settings.socials.channels}" />
 </f:if>

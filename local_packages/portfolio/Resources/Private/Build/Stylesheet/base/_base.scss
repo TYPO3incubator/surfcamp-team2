@@ -31,6 +31,7 @@ body {
   background-color: var(--color-base-background);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding-top: 5.5rem;
 
   &.mobile-menu-shown {
     overflow: hidden;
@@ -70,10 +71,16 @@ body {
   > *:last-child {
     margin-bottom: var(--spacer-lg);
   }
+
+  .section:nth-child(even) {
+    background-color: var(--color-section-background-light);
+  }
 }
 
 section,
 .section {
   position: relative;
   z-index: 0;
+  padding-top: var(--spacer-lg);
+  padding-bottom: var(--spacer-lg);
 }
