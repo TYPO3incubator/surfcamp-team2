@@ -10,14 +10,11 @@
                         </div>
 
                         <f:if condition="{project.showDetailPage}">
-                            <f:then>
-                                <f:link.action action="show" arguments="{project: project}" class="link">
-                                    Read More
-                                </f:link.action>
-                            </f:then>
-                            <f:else>
-                                {project.title}<br>
-                            </f:else>
+                            <f:link.action action="show" 
+                                pageUid="16"
+                                arguments="{project: project}" class="link">
+                                Read More
+                            </f:link.action>
                         </f:if>
                     </div>
                 </div>

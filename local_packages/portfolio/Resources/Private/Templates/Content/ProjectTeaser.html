@@ -2,4 +2,18 @@
 <h1>{data.header}</h1>
 <p>{data.subheader}</p>
 <f:link.typolink parameter="{data.link}">{data.link_text}</f:link.typolink>
-<f:debug inline="1">{_all}</f:debug>
+<f:for each="{projects}" as="project">
+    <h2>{project.data.title}</h2>
+    <p>{project.data.description}</p>
+    <p>{project.data.uid}
+    <f:link.action action="show"
+        arguments="{project: project.data.uid}"
+        extensionName="portfolio"
+        pluginName="portfolio_projects"
+        controller="Project"
+        pageUid="16"
+        class="link">
+        Read More
+    </f:link.action>
+</f:for>
+
