@@ -13,13 +13,15 @@ use function str_replace;
 final class SetCss
 {
     private const FONT_MARKUP = <<<END
-        --font-family-heading:  '#FONT_NAME#', 'Georgia', serif;
-        --font-family-copytext: '#COPY_FONT_NAME#', 'Tahoma', sans-serif;
+        :root {
+            --font-family-heading:  '#FONT_NAME#', 'Georgia', serif;
+            --font-family-copytext: '#COPY_FONT_NAME#', 'Tahoma', sans-serif;
+        }
         
         // Headline Font in Bold
         @font-face {
             font-family: '#FONT_NAME#';
-            src: url("#PATH##FONT_NAME_TRIMMED#-Bold.woff2") format("woff2");
+            src: url(".#PATH##FONT_NAME_TRIMMED#-Bold.woff2") format("woff2");
             font-weight: 700;
             font-style: normal;
             font-display: swap;
@@ -88,12 +90,15 @@ final class SetCss
         $settings = $this->getSettings($request);
         $styleVariables = [];
         foreach ($settings['style']['variables'] as $item) {
-            $styleVariables[] = '--' . $item['key'] . ': ' . $item['value'];
+            $styleVariables[] = '--' . $item['key'] . ': ' . $item['value'] . '; ';
         }
 
         $font = $this->getCustomFont($settings);
 
-        return '<style>' . implode('; ', $styleVariables) . '; ' . $font . '</style>';
+        return '<style>' .
+            ':root {' .
+            implode(PHP_EOL, $styleVariables) . '} ' . $font . '
+</style>';
     }
 
     protected function getSettings(ServerRequestInterface $request): array

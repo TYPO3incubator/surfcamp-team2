@@ -37,14 +37,14 @@ style:
   variables:
     primaryColor:
       key: 'color-primary'
-      value: '#000000'
+      value: '#ff854d'
     secondaryColor:
       key: 'color-secondary'
-      value: '#000000'
+      value: '#ff854d'
   data:
     theme:
       key: 'theme'
-      value: 'light'
+      value: 'dark'
     buttonBorderRadius:
       key: 'button-border-radius'
       value: 'none'
