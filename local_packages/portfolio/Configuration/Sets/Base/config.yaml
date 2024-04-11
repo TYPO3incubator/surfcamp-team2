@@ -1,5 +1,2 @@
 name: surfcamp/base
 label: Base
-routes: {  }
-dependencies:
-  - surfcamp/base

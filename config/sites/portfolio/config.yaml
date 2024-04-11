@@ -25,3 +25,4 @@ languages:
     flag: de
 rootPageId: 1
 websiteTitle: 'Marvi Website'
+routes: {  }
