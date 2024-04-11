@@ -12,6 +12,10 @@
     "watch:ts": "npm run watch:ts --workspaces --if-present",
     "watch:sass": "npm run watch:sass --workspaces --if-present"
   },
+  "engines": {
+    "node": "~18 || ~20",
+    "npm": ">=9.0.0 <11.0.0"
+  },
   "license": "GPL-2.0-or-later"
 }
 
