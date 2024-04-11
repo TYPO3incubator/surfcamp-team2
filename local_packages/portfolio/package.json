@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "license": "GPL-2.0-or-later",
   "scripts": {
-    "build": "npm run build:sass && npm run build:ts",
+    "build": "ddev npm run build:sass && ddev npm run build:ts",
     "build:sass": "sass ./Resources/Private/Build/Stylesheet/styles.scss:./Resources/Public/Stylesheet/styles.css --style compressed",
     "build:ts": "tsc",
     "watch:ts": "tsc --watch",
