@@ -1,19 +1,36 @@
-<section class="ce-introduction-card section">
+<html
+    data-namespace-typo3-fluid="true"
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+>
+
+<f:variable name="ContentAligment" value="center" />
+
+<section class="ce-introduction-card section text-{ContentAligment}">
     <div class="container">
         <div class="row">
-            <f:if condition="{image.0}">
+            <f:if condition="{ContentAligment} == 'center'">
                 <f:then>
-                    <div class="col sm-12 md-offset-1 md-10 md-offset-1 lg-3 lg-offset-2 xl-2 xl-offset-2">
+                    <div class="col sm-12 md-offset-2 md-8 lg-offset-3 lg-6">
                         <f:render section="Image" arguments="{_all}" />
-                    </div>
-                    <div class="col sm-12 md-offset-1 md-10 lg-offset-0 lg-6">
                         <f:render section="Content" arguments="{_all}" />
                     </div>
                 </f:then>
                 <f:else>
-                    <div class="col sm-12 md-10 md-offset-1 lg-7 lg-offset-2 xl-8 xl-offset-2">
-                        <f:render section="Content" arguments="{_all}" />
-                    </div>
+                    <f:if condition="{image.0}">
+                        <f:then>
+                            <div class="col sm-12 md-10 md-offset-1 lg-3 lg-offset-2 xl-2 xl-offset-2">
+                                <f:render section="Image" arguments="{_all}" />
+                            </div>
+                            <div class="col sm-12 md-offset-1 md-10 lg-offset-0 lg-6">
+                                <f:render section="Content" arguments="{_all}" />
+                            </div>
+                        </f:then>
+                        <f:else>
+                            <div class="col sm-12 md-10 md-offset-1 lg-7 lg-offset-2 xl-8 xl-offset-2">
+                                <f:render section="Content" arguments="{_all}" />
+                            </div>
+                        </f:else>
+                    </f:if>
                 </f:else>
             </f:if>
         </div>
@@ -47,3 +64,5 @@
         </f:if>
     </div>
 </f:section>
+
+</html>

@@ -38,12 +38,6 @@ $breakpoints: (
     xl: 1440px,
 );
 
-// * font families
-@include css-root-vars {
-    --font-family-heading:         'Roboto Slab', serif;
-    --font-family-copytext:        'Roboto', sans-serif;
-}
-
 // * font-weights
 $font-light:            300;
 $font-regular:          400;

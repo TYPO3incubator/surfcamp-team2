@@ -1,3 +1,5 @@
+<f:variable name="ContentAligment" value="center" />
+
 <section class="section ce-resume">
     <div class="container">
         <div class="row">
@@ -6,13 +8,15 @@
                     <div class="col sm-12 md-6 lg-offset-1 lg-5 xl-offset-2 xl-4">
                         <f:render section="RowContent" arguments="{
                             headline: data.header,
-                            list: resume_items
+                            list: resume_items,
+                            ContentAligment: ContentAligment
                         }" />
                     </div>
                     <div class="col sm-12 md-6 lg-5 xl-4">
                         <f:render section="RowContent" arguments="{
                             headline: data.additional_header,
-                            list: additional_resume_items
+                            list: additional_resume_items,
+                            ContentAligment: ContentAligment
                         }" />
                     </div>
                 </f:then>
@@ -22,13 +26,15 @@
                             <f:then>
                                 <f:render section="RowContent" arguments="{
                                     headline: data.header,
-                                    list: resume_items
+                                    list: resume_items,
+                                    ContentAligment: ContentAligment
                                 }" />
                             </f:then>
                             <f:else>
                                 <f:render section="RowContent" arguments="{
                                     headline: data.additional_header,
-                                    list: additional_resume_items
+                                    list: additional_resume_items,
+                                    ContentAligment: ContentAligment
                                 }" />
                             </f:else>
                         </f:if>
@@ -40,7 +46,7 @@
 </section>
 
 <f:section name="RowContent">
-    <div class="ce-resume__header">
+    <div class="ce-resume__header text-{ContentAligment}">
         <f:render partial="Content/Atoms/Headline" arguments="{
             headline: headline
         }" />
