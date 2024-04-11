@@ -1,17 +1,30 @@
+<section class="project-list section">
+    <div class="container">
+        <div class="row">
+            <f:for each="{projects}" as="project">
+                <div class="col sm-12 md-6 lg-4">
+                    <div class="project-list__wrapper">
+                        <h5 class="project-list__headline">{project.title}</h5>
+                        <div class="project-list__description">
+                            {project.description -> f:format.html()}
+                        </div>
 
-    <ul>
-        <f:for each="{projects}" as="project">
-            <li>
-                <f:if condition="{project.showDetailPage}">
-                    <f:then>
-                        <f:link.action action="show" arguments="{project: project}" style="color: white;">
-                            {project.title}<br>
-                        </f:link.action>
-                    </f:then>
-                    <f:else>
-                        {project.title}<br>
-                    </f:else>
-                </f:if>
-            </li>
-        </f:for>
-    </ul>
+                        <f:if condition="{project.showDetailPage}">
+                            <f:then>
+                                <f:link.action action="show" arguments="{project: project}" class="link">
+                                    Read More
+                                </f:link.action>
+                            </f:then>
+                            <f:else>
+                                {project.title}<br>
+                            </f:else>
+                        </f:if>
+                    </div>
+                </div>
+            </f:for>
+        </div>
+    </div>
+</section>
+
+
+
