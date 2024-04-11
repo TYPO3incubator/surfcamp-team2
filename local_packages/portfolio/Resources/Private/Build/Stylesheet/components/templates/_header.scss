@@ -20,14 +20,20 @@
     padding: $size-16;
   }
 
-  &__menu {
+  &__logo{
+    color: var(--color-base-text-secondary);
+    text-decoration: none;
+    &:hover{
+      color: var(--color-secondary);
+    }
+  }
 
+  &__menu {
     @include breakpoint-down(md) {
       position: absolute;
       width: 100%;
       top: 100%;
       right: -100%;
-      padding: $size-12;
       visibility: hidden;
       z-index: 9;
       opacity: 0;
@@ -35,12 +41,23 @@
       transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
       .menu__list {
         flex-direction: column;
+        gap: $size-4;
       }
       &.active {
         right: 0;
         opacity: 1;
         visibility: visible;
         transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
+      }
+
+      .menu-link{
+        padding: $size-12;
+        transition: all .3s ease-in-out;
+        &:hover{
+          background-color: var(--color-secondary);
+          color: var(--color-base-text-secondary);
+          transition: all .3s ease-in-out;
+        }
       }
     }
 
