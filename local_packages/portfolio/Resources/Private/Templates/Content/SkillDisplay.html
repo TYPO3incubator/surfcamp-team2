@@ -7,14 +7,14 @@
 				<f:if condition="{data.show_progress_level}">
 					<f:then>
 						<f:render partial="Content/Atoms/ProgressBar" arguments="{
-					label: skill.data.name,
-					value: skill.data.progress_level,
-				}" />
+							label: skill.data.name,
+							value: skill.data.progress_level,
+						}" />
 					</f:then>
 					<f:else>
 						<f:render partial="Content/Atoms/Pill" arguments="{
-						text: skill.data.name
-					}" />
+							text: skill.data.name
+						}" />
 					</f:else>
 				</f:if>
 			</f:for>
