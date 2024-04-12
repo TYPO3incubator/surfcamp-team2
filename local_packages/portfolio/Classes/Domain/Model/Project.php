@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Surfcamp\Portfolio\Domain\Model;
 
+use TYPO3\CMS\Extbase\Domain\Model\Category;
 use TYPO3\CMS\Extbase\Domain\Model\FileReference;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
@@ -23,6 +24,11 @@ class Project extends AbstractEntity
      * @var ObjectStorage<Link>
      */
     protected $links;
+
+    /**
+     * @var ObjectStorage<Category>
+     */
+    protected $categories;
 
     protected bool $showDetailPage = false;
 
@@ -100,6 +106,26 @@ class Project extends AbstractEntity
     public function removeLink(Link $linkToRemove)
     {
         $this->links->detach($linkToRemove);
+    }
+
+    public function getCategories(): ObjectStorage
+    {
+        return $this->categories;
+    }
+
+    public function setCategories(ObjectStorage $categories): void
+    {
+        $this->categories = $categories;
+    }
+
+    public function addCategories(Link $categories)
+    {
+        $this->categories->attach($categories);
+    }
+
+    public function removeCategory(Link $categoryToRemove)
+    {
+        $this->categories->detach($categoryToRemove);
     }
 
 

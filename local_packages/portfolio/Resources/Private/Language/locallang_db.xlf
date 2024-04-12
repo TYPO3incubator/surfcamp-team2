@@ -60,12 +60,19 @@
 				<source>A element to present all logos of a list of clients</source>
 			</trans-unit>
 			<trans-unit id="content_element.portfolio_projects">
-				<source>Projects</source>
+				<source>Projects List</source>
 			</trans-unit>
 			<trans-unit id="content_element.portfolio_projects.description">
 				<source>A element to present all projects including details</source>
 			</trans-unit>
+			<trans-unit id="content_element.project_teaser">
+				<source>Projects Teaser</source>
+			</trans-unit>
+			<trans-unit id="content_element.project_teaser.description">
+				<source>A element to present the latest projects</source>
+			</trans-unit>
 			
+
 
 			<trans-unit id="field.link">
 				<source>Link</source>

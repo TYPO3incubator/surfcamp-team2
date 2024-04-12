@@ -1,30 +1,46 @@
-<html
-	data-namespace-typo3-fluid="true"
-	xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
->
-
-<f:comment>
-	<!--
-		<f:render partial="Content/Atoms/Card" arguments="{
-			title: string,
-			description: string (optional),
-			showReadMore: boolean (optional),
-			classes: string (optional)
-		}" />
-	-->
-</f:comment>
-
 <div class="card__wrapper">
-	<h5 class="card__headline">{title}</h5>
-	<div class="card__description">
-		{description -> f:format.html()}
-	</div>
+    <h5 class="card__headline">{title}</h5>
+    <div class="card__description">
+        {description -> f:format.html()}
+    </div>
 
-	<f:if condition="{showReadMore}">
-		<f:then>
-			<f:link.action action="show" arguments="{project: project}" class="link">
-				Read More
-			</f:link.action>
-		</f:then>
+    <f:if condition="{externalLinks}">
+        <div class="card__external-links">
+            <f:for each="{externalLinks}" as="link">
+                <f:if condition="{link}">
+					<a class="card__link link" href="{link.link}">
+                        <div class="card__icon">
+                            <span class="icon icon-link"></span>
+                        </div>
+						<span>{link.name}</span>
+					</a>
+                </f:if>
+            </f:for>
+        </div>
+    </f:if>
+
+	<f:if condition="{categories}">
+		<div class="card__tags">
+			<f:for each="{categories}" as="category">
+				<f:if condition="{category}">
+					<span class="card__tag">{category.title}</span>
+				</f:if>
+			</f:for>
+		</div>
 	</f:if>
+
+    <f:if condition="{showReadMore}">
+        <f:then>
+            <f:link.action
+                    action="show"
+                    arguments="{project: project}"
+                    extensionName="Portfolio"
+                    controller="Project"
+                    pluginName="Projects"
+                    pageUid="{detailPid}"
+                    class="link">
+                Read More
+            </f:link.action>
+        </f:then>
+    </f:if>
 </div>

@@ -51,6 +51,20 @@ renderables:
               elementDescription: ''
               fluidAdditionalAttributes:
                 required: required
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  lg:
+                    numbersOfColumnsToUse: '6'
+                  xl:
+                    numbersOfColumnsToUse: '6'
+                  xxl:
+                    numbersOfColumnsToUse: '6'
             validators:
               -
                 identifier: NotEmpty
@@ -62,6 +76,20 @@ renderables:
             properties:
               fluidAdditionalAttributes:
                 required: required
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  lg:
+                    numbersOfColumnsToUse: '6'
+                  xl:
+                    numbersOfColumnsToUse: '6'
+                  xxl:
+                    numbersOfColumnsToUse: '6'
             validators:
               -
                 identifier: NotEmpty
@@ -85,6 +113,17 @@ renderables:
         label: Message
         properties:
           elementDescription: ''
+          fluidAdditionalAttributes:
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        type: Checkbox
+        identifier: checkbox-1
+        label: 'Privacy Policy'
+        properties:
+          elementDescription: 'I accept the privacy policy'
           fluidAdditionalAttributes:
             required: required
         validators:

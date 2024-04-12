@@ -1,4 +1,29 @@
- <f:if condition="{content}">
+<f:if condition="{content}">
     <f:then>{content -> f:format.raw()}</f:then>
-    <f:else><f:cObject typoscriptObjectPath="tt_content.{data.CType}.20" data="{data}" table="tt_content" /></f:else>
+    <f:else>
+        <f:if condition="{data.CType} == 'form_formframework'">
+            <f:then>
+                <section class="section content-form">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col sm-12 md-offset-2 md-8 xl-offset-3 xl-6">
+                                <div class="content-form__header">
+                                    <f:render partial="Content/Atoms/Headline" arguments="{
+                                        headline: data.header,
+                                        tag: data.header_layout
+                                    }" />
+                                </div>
+                                <div class="content-form__form">
+                                    <f:cObject typoscriptObjectPath="tt_content.{data.CType}.20" data="{data}" table="tt_content"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </f:then>
+            <f:else>
+                <f:cObject typoscriptObjectPath="tt_content.{data.CType}.20" data="{data}" table="tt_content"/>
+            </f:else>
+        </f:if>
+    </f:else>
 </f:if>

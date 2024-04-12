@@ -144,3 +144,8 @@ settings:
     description: 'The alignment of the content'
     type: string
     default: 'center'
+  logo.path:
+    label: 'Logo Path'
+    description: 'Fileadmin path to the logo file'
+    type: string
+    default: '/fileadmin/logo/typo3_logo.svg'

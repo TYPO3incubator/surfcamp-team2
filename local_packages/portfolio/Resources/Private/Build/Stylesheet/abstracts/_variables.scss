@@ -4,15 +4,18 @@
 
 // * CSS variables semantics
 @include css-root-vars() {
-    // (fallback) Set by themes
+    --color-primary: #75df91;
+    --color-secondary: color-mix(in srgb,var(--color-primary), currentColor 20%);
     --color-base-background: #444;
-
-    --color-section-background-light: #585858;
-    --color-section-background-dark: #444;
-
     --color-base-text: #fff;
     --color-base-text-secondary: #e2e2e2;
-    --color-button-text: #fff;
+    --color-button-text: #ffffff;
+    --color-section-background-light: #585858;
+    --color-section-background-dark: #444;
+    --font-copytext-name: 'Roboto';
+    --font-headline-name: 'Roboto Slab';
+    --color-alert: #ea0808;
+    --color-border: #696967;
 }
 
 $body-bg-color:             var(--color-background);

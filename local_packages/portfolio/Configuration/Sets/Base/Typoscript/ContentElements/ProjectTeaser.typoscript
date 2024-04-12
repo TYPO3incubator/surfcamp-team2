@@ -1,0 +1,22 @@
+tt_content.project_teaser =< lib.content
+tt_content.project_teaser {
+    templateName = ProjectTeaser
+
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        10 {
+            table = tx_portfolio_domain_model_project
+            pidInList {
+                field = pages
+            }
+            orderBy = crdate DESC
+            as = projects
+        }
+    }
+
+    variables {
+        detailPid = TEXT
+        detailPid.value = {$config.projects.detailPid}
+    }
+}
+

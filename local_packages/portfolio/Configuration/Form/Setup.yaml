@@ -20,4 +20,4 @@ TYPO3:
                 templateRootPaths:
                   20: 'EXT:portfolio/Resources/Private/Templates/Form/'
                 partialRootPaths:
-                  20: 'EXT:portfolio/Resources/Private/Template/Partials/Form/'
+                  20: 'EXT:portfolio/Resources/Private/Templates/Form/Partials/'
