@@ -165,6 +165,18 @@
 				<source>h6</source>
 				<target>h6</target>
 			</trans-unit>
+			<trans-unit id="field.background">
+				<source>Background</source>
+				<target>Hintergrund</target>
+			</trans-unit>
+			<trans-unit id="field.background.light">
+				<source>Light</source>
+				<target>Hell</target>
+			</trans-unit>
+			<trans-unit id="field.background.dark">
+				<source>Dark</source>
+				<target>Dunkel</target>
+			</trans-unit>
 			<trans-unit id="field.showDetailPage">
 				<source>Show detail page</source>
 				<target>Detailseite anzeigen</target>
