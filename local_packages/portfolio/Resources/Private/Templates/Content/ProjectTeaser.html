@@ -1,21 +1,35 @@
 <div class="project-list section">
     <div class="container">
-        <h1>{data.header}</h1>
-        <p>{data.subheader}</p>
-        <f:link.typolink parameter="{data.link}">{data.link_text}</f:link.typolink>
+        <div class="col sm-12 md-10 md-offset-1 lg-7 lg-offset-2 xl-8 xl-offset-2">
+            <f:render 
+                partial="Content/Atoms/Headline" 
+                arguments="{ 
+                    headline: data.header,
+                    tag: data.header_layout }">
+        </f:render>
+        </div>
         
         <div class="row">
             <f:for each="{projects}" as="project">
-                <f:render partial="Content/Atoms/Card" arguments="{
-                    title: project.data.title,
-                    description: project.data.description,
-                    showReadMore: project.data.show_detail_page,
-                    link: project.data,
-                    project: project.data.uid,
-                    detailPid: detailPid
-                }"/>
+                <div class="col sm-12 md-6 lg-4">
+                    <f:render partial="Content/Atoms/Card" arguments="{
+                        title: project.data.title,
+                        description: project.data.description,
+                        showReadMore: project.data.show_detail_page,
+                        link: project.data,
+                        project: project.data.uid,
+                        detailPid: detailPid
+                    }"/>
+                </div>
             </f:for>
         </div>
+
+        <f:if condition="{data.link}">
+            <f:render partial="Content/Atoms/Button" arguments="{
+                label: data.link_text,
+                link: data.link
+            }" />
+        </f:if>
     </div>
 </div>
 
