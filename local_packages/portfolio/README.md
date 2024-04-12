@@ -25,15 +25,18 @@ The portfolio provides a set of often used content elements for portfolio pages 
 - **Project Teaser**: The project teaser shows three projects from the listing and provides a link to the projects list.
 
 
-## Portfolio Configuration & Styling
+## Portfolio Styling & Sets Configuration
 As soon as the setup is done, the portfolio can be adapted to your personal style and needs, this can be done by some basic configurations.
 
-### Example: Theme
+**Example: Theme**
 The portfolio provides two themes: 
 - dark mode
 - light mode
 
-You can change the theme in the settings with ```style.data.theme```. In the following table all options are shown.
+You can change the theme in the settings with ```style.data.theme```.
+
+### Sets Configuration
+In the following table all options for the sets configration are shown.
 
 | Identifier    | Description                 | Default  | Possible Options             |
 |---------------|-----------------------------|----------|------------------------------|
@@ -46,10 +49,9 @@ You can change the theme in the settings with ```style.data.theme```. In the fol
 |```style.contentAlignment```|Defining the content alignment|```center```|```center```, ```left```|
 |```style.logo.path```|Defining the logo path in fileadmin|```/fileadmin/logo/typo3_logo.svg```|define the correct path|
 
-
 ## Socials
 
-For adding links to your social media accounts you just need to add links to your accounts in the sets. The following social media channels are yet supported:
+For adding links to your social media accounts you just need to add links to your accounts in the sets. The following social media channels are yet supported and can be shown with an icon.
 
 | Channel| Identifier|
 |--------|-----------|
