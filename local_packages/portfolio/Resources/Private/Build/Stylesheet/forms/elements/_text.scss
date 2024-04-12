@@ -9,7 +9,7 @@ input[type='tel'] {
     font-size: $font-16;
     background-color: var(--color-section-background-light);
     border: 1px solid var(--color-border);
-    font-family: $font-family;
+    font-family: var(--font-family);
     color: var(--color-base-text);
     border-radius: $size-4;
 
