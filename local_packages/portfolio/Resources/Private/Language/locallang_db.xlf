@@ -135,6 +135,17 @@
 			<trans-unit id="field.links">
 				<source>Links</source>
 			</trans-unit>
+
+			<trans-unit id="field.background">
+				<source>Background</source>
+			</trans-unit>
+			<trans-unit id="field.background.light">
+				<source>Light</source>
+			</trans-unit>
+			<trans-unit id="field.background.dark">
+				<source>Dark</source>
+			</trans-unit>
+
 			<trans-unit id="field.showDetailPage">
 				<source>Show detail page</source>
 			</trans-unit>

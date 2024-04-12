@@ -39,12 +39,48 @@ $GLOBALS['TCA']['tt_content']['columns']['header_style'] = [
         'renderType' => 'selectSingle',
         'items' => [
             ['label' => '', 'value' => ''],
-            ['label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.header_style.h1', 'value' => 'h1'],
-            ['label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.header_style.h2', 'value' => 'h2'],
-            ['label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.header_style.h3', 'value' => 'h3'],
-            ['label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.header_style.h4', 'value' => 'h4 '],
-            ['label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.header_style.h5', 'value' => 'h5'],
-            ['label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.header_style.h6', 'value' => 'h6'],
+            [
+                'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.header_style.h1',
+                'value' => 'h1'
+            ],
+            [
+                'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.header_style.h2',
+                'value' => 'h2'
+            ],
+            [
+                'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.header_style.h3',
+                'value' => 'h3'
+            ],
+            [
+                'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.header_style.h4',
+                'value' => 'h4 '
+            ],
+            [
+                'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.header_style.h5',
+                'value' => 'h5'
+            ],
+            [
+                'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.header_style.h6',
+                'value' => 'h6'
+            ],
+        ],
+    ],
+];
+
+$GLOBALS['TCA']['tt_content']['columns']['background'] = [
+    'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.background',
+    'config' => [
+        'type' => 'select',
+        'renderType' => 'selectSingle',
+        'items' => [
+            [
+                'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.background.dark',
+                'value' => 'bg--section-background-dark'
+            ],
+            [
+                'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.background.light',
+                'value' => 'bg--section-background-light'
+            ],
         ],
     ],
 ];
@@ -68,6 +104,20 @@ $GLOBALS['TCA']['tt_content']['palettes']['minimalHeaders'] = [
         subheader;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:subheader_formlabel
     ',
 ];
+
+$GLOBALS['TCA']['tt_content']['palettes']['frames'] = array_replace_recursive(
+    $GLOBALS['TCA']['tt_content']['palettes']['frames'],
+    [
+        'showitem' => '
+                layout;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:layout_formlabel,
+                frame_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:frame_class_formlabel,
+                space_before_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:space_before_class_formlabel,
+                space_after_class;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:space_after_class_formlabel,
+                --linebreak--,
+                background,
+            ',
+    ]
+);
 
 call_user_func(static function () {
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(

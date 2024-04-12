@@ -9,8 +9,8 @@
     padding: $size-24;
     background-color: var(--color-section-background-light);
     height: 100%;
-    border-radius: $size-20;
-    border: $size-2 solid var(--color-button-text);
+    border-radius: var(--button-border-radius);
+    border: $size-2 solid var(--color-base-border);
     margin-bottom: $size-24;
     transition: all .3s ease-in-out;
     .project-link{
