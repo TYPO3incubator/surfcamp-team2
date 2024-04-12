@@ -43,10 +43,10 @@ style:
   variables:
     primaryColor:
       key: 'color-primary'
-      value: '#ff854d'
+      value: '#FF8700'
     secondaryColor:
       key: 'color-secondary'
-      value: '#ff854d'
+      value: '#ffbb00'
   data:
     theme:
       key: 'theme'
