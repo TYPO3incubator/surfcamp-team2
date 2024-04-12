@@ -1,4 +1,4 @@
-tt_content.client_logos =< lib.content
+tt_content.client_logos =< lib.contentElement
 tt_content.client_logos {
     templateName = ClientLogos
 

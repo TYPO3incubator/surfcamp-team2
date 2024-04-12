@@ -1,5 +1,4 @@
 page = PAGE
-
 page {
     10 = PAGEVIEW
     10.paths.0 = EXT:theme_portfolio/Resources/Private/Templates/

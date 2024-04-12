@@ -1,4 +1,4 @@
-tt_content.textpic =< lib.content
+tt_content.textpic =< lib.contentElement
 tt_content.textpic {
     templateName = Textpic
 

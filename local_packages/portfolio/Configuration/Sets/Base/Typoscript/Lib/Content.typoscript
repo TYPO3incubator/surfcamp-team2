@@ -1,5 +1,5 @@
-lib.content = FLUIDTEMPLATE
-lib.content {
+lib.contentElement = FLUIDTEMPLATE
+lib.contentElement {
     layoutRootPaths.10 = EXT:theme_portfolio/Resources/Private/Templates/Layouts/
     partialRootPaths.10 = EXT:theme_portfolio/Resources/Private/Templates/Partials/
     templateRootPaths.10 = EXT:theme_portfolio/Resources/Private/Templates/Content/

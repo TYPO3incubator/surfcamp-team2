@@ -1,4 +1,4 @@
-tt_content.introduction_card =< lib.content
+tt_content.introduction_card =< lib.contentElement
 tt_content.introduction_card {
     templateName = IntroductionCard
 

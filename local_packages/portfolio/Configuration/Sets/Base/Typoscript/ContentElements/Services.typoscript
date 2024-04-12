@@ -1,4 +1,4 @@
-tt_content.services =< lib.content
+tt_content.services =< lib.contentElement
 tt_content.services {
     templateName = Services
 
