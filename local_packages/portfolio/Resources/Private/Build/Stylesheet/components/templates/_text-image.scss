@@ -1,8 +1,4 @@
 .ce-textpic {
-    &.ce-textpic.ce-textpic {
-        background-color: var(--color-base-background);
-    }
-
     .image {
         margin-bottom: $size-24;
         @include last-no-margin('bottom');
