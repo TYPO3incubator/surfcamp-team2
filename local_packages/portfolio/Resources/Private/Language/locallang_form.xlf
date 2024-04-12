@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file source-language="en" datatype="plaintext" original="EXT:portfolio/Resources/Private/Language/locallang_form.xlf" product-name="portfolio">
+	<file source-language="en" datatype="plaintext" original="EXT:theme_portfolio/Resources/Private/Language/locallang_form.xlf" product-name="portfolio">
 		<header/>
 		<body>
 			<trans-unit id="contactForm.element.text-1.properties.label" resname="element.text-1.properties.label" xml:space="preserve">

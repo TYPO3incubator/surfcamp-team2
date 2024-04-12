@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Surfcamp\Portfolio\Domain\Model;
+namespace FriendsOfTYPO3\ThemePortfolio\Domain\Model;
 
 use TYPO3\CMS\Extbase\Domain\Model\Category;
 use TYPO3\CMS\Extbase\Domain\Model\FileReference;

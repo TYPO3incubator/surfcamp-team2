@@ -9,8 +9,8 @@ ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
-        'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display',
-        'description' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display.description',
+        'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display',
+        'description' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display.description',
         'value' => 'skill_display',
         'icon' => 'icon_skills',
         'group' => 'default',
@@ -47,10 +47,10 @@ $GLOBALS['TCA']['tt_content']['types']['skill_display'] = [
 ];
 
 $GLOBALS['TCA']['tt_content']['columns']['skills'] = [
-    'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display.skills',
+    'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display.skills',
     'config' => [
         'type' => 'inline',
-        'help' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display.skills_help',
+        'help' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display.skills_help',
         'foreign_table' => 'tx_portfolio_skill',
         'foreign_field' => 'parent',
         'foreign_sortby' => 'sorting',
@@ -61,7 +61,7 @@ $GLOBALS['TCA']['tt_content']['columns']['skills'] = [
 ];
 
 $GLOBALS['TCA']['tt_content']['columns']['show_progress_level'] = [
-    'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display.show_progress_level',
+    'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display.show_progress_level',
     'config' => [
         'type' => 'check',
     ]

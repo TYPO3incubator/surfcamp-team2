@@ -2,14 +2,14 @@ page = PAGE
 
 page {
     10 = PAGEVIEW
-    10.paths.0 = EXT:portfolio/Resources/Private/Templates/
+    10.paths.0 = EXT:theme_portfolio/Resources/Private/Templates/
 
     css_inlinestyle >
     cssInline >
     includeCSS >
     includeCSSLibs >
     includeCSS {
-      styles = EXT:portfolio/Resources/Public/Stylesheet/styles.css
+      styles = EXT:theme_portfolio/Resources/Public/Stylesheet/styles.css
     }
 
     includeJS >
@@ -18,7 +18,7 @@ page {
     includeJSFooter >
     includeJSFooterlibs >
     includeJSFooter {
-      app = EXT:portfolio/Resources/Public/JavaScript/app.js
+      app = EXT:theme_portfolio/Resources/Public/JavaScript/app.js
       app {
         async = 1
         defer = 1
@@ -31,13 +31,13 @@ page {
 
     headerData {
         100 = USER
-        100.userFunc = Surfcamp\Portfolio\UserFunctions\SetCss->getCssForHeader
+        100.userFunc = FriendsOfTYPO3\ThemePortfolio\UserFunctions\SetCss->getCssForHeader
     }
 
     bodyTagCObject = COA
     bodyTagCObject {
         10 = USER
-        10.userFunc = Surfcamp\Portfolio\UserFunctions\SetCss->getBodyDataModifier
+        10.userFunc = FriendsOfTYPO3\ThemePortfolio\UserFunctions\SetCss->getBodyDataModifier
         wrap = <body|>
     }
 }

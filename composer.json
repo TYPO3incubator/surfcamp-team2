@@ -35,7 +35,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.2",
-        "surfcamp/portfolio": "dev-main",
+        "friendsoftypo3/theme-portfolio": "dev-main",
         "typo3/cms-backend": "dev-main",
         "typo3/cms-belog": "dev-main",
         "typo3/cms-beuser": "dev-main",

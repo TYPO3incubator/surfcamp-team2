@@ -1,6 +1,6 @@
 base: '%env(TYPO3_BASE_URL)%'
 dependencies:
-  - surfcamp/base
+  - friendsoftypo3/base
 errorHandling:
   -
     errorCode: 404

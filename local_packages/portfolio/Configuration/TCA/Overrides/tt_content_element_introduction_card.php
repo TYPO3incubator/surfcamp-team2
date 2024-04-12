@@ -9,8 +9,8 @@ ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
-        'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.introduction_card',
-        'description' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.introduction_card.description',
+        'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.introduction_card',
+        'description' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.introduction_card.description',
         'value' => 'introduction_card',
         'icon' => 'icon_intro',
         'group' => 'default',

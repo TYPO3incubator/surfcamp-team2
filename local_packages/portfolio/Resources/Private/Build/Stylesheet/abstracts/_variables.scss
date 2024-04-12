@@ -22,10 +22,10 @@
 $body-bg-color:             var(--color-background);
 
 $colors: (
-    'primary':            var(--color-primary),
-    'secondary':          var(--color-secondary),
-    'base-background':    var(--color-base-background),
-    'base-text':          var(--color-base-text),
+        'primary':            var(--color-primary),
+        'secondary':          var(--color-secondary),
+        'base-background':    var(--color-base-background),
+        'base-text':          var(--color-base-text),
 );
 
 // Typography
@@ -35,11 +35,11 @@ $line-height-base:            1.25;
 
 // Breakpoint Sizes
 $breakpoints: (
-    xs: 0px,
-    sm: 375px,
-    md: 768px,
-    lg: 1024px,
-    xl: 1440px,
+        xs: 0px,
+        sm: 375px,
+        md: 768px,
+        lg: 1024px,
+        xl: 1440px,
 );
 
 // * font-weights
@@ -166,8 +166,8 @@ $transition-timing-slow: 500ms;
 
 // Image Ratios
 $ratios: (
-    '16-9':    53.33%,
-    '3-2':     66%,
-    '4-3':     75%,
-    '1-1':     100%,
+        '16-9':    53.33%,
+        '3-2':     66%,
+        '4-3':     75%,
+        '1-1':     100%,
 );
