@@ -1,16 +1,9 @@
-<f:variable name="contentAlignment" value="{site.settings.all.style.contentAlignment}"/>
+<f:layout name="ContentBlock" />
+<f:section name="Main">
 
-<div class="section ce-skill-display {data.background}">
 	<div class="container">
 		<div class="row">
 			<div class="col sm-12 md-10 md-offset-1 lg-7 lg-offset-2 xl-8 xl-offset-2">
-				<f:render partial="Content/Molecules/HeadlineCopytext" arguments="{
-					headline: data.header,
-					headlineTag: data.header_layout,
-					headlinePosition: '{f:if(condition: \'{contentAlignment} == center\', then: \'center\', else: data.header_position)}',
-					subheadline: data.subheader,
-					bodytext: data.bodytext
-				}"/>
 				<div class="ce-skill-display__list">
 					<f:for each="{skills}" as="skill">
 						<f:if condition="{data.show_progress_level}">
@@ -31,4 +24,5 @@
 			</div>
 		</div>
 	</div>
-</div>
+
+</f:section>
