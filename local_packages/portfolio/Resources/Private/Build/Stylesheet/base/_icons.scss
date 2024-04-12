@@ -8,12 +8,18 @@
   &__item {
     height: 10rem;
     width: 10rem;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    background-color: var(--color-section-background-light);
-    border-radius: 0.5rem;
+    border: 2px solid var(--color-base-border);
+    background-color: var(--color-section-background-dark);
+    border-radius: var(--button-border-radius);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      border: $size-2 solid var(--color-secondary);
+      transition: all .3s ease-in-out;
+    }
   }
 }
 

@@ -7,6 +7,7 @@
     --color-primary: #75df91;
     --color-secondary: color-mix(in srgb,var(--color-primary), currentColor 20%);
     --color-base-background: #444;
+    --color-base-border: #878787;
     --color-base-text: #fff;
     --color-base-text-secondary: #e2e2e2;
     --color-button-text: #ffffff;
@@ -108,8 +109,8 @@ $font-size-h6-lg:       $font-20;
 // * semantics
 $base-text-color:             var(--color-base-text);
 $base-text-size:              $font-18;
-$selection-text-color:        var(--color-primary);
-$selection-background-color:  rgba(200, 200, 200, .5);
+$selection-text-color:        var(--color-base-text);
+$selection-background-color:  var(--color-primary);
 
 // Spaces
 // * primitives
@@ -156,7 +157,7 @@ $row-padding: 0rem;
 
 // * columns
 $gridsize: 12;
-$col-padding: $size-24;
+$col-padding: $size-12;
 
 // Transitions
 $transition-timing-fast:  150ms;
