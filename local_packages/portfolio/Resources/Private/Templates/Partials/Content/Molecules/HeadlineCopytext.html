@@ -9,6 +9,7 @@
             headline: string/html (optional),
             headlinePosition: string (optional),
             headlineTag: number (optional),
+            subheadline: string (optional),
             bodytext: string/html (optional)
         }"/>
     -->
@@ -21,6 +22,12 @@
             headlinePosition: headlinePosition,
             tag: headlineTag,
             classes: headlineClasses
+        }" />
+    </f:if>
+    <f:if condition="{subheadline}">
+        <f:render partial="Content/Atoms/Subheadline" arguments="{
+            subheadline: subheadline,
+            headlinePosition: headlinePosition
         }" />
     </f:if>
     <f:if condition="{bodytext}">
