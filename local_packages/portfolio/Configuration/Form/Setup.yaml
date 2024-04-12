@@ -17,3 +17,7 @@ TYPO3:
                     10: 'EXT:form/Resources/Private/Language/locallang.xlf'
                     # Lade deine eigenen Sprachdateien nachfolgend:
                     20: 'EXT:portfolio/Resources/Private/Language/locallang_form.xlf'
+                templateRootPaths:
+                  20: 'EXT:portfolio/Resources/Private/Templates/Form/'
+                partialRootPaths:
+                  20: 'EXT:portfolio/Resources/Private/Templates/Form/Partials/'
