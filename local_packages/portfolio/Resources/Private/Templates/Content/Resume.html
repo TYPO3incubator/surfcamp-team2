@@ -1,4 +1,4 @@
-<f:variable name="ContentAligment" value="center" />
+<f:variable name="contentAlignment" value="{site.settings.all.style.contentAlignment}" />
 
 <section class="section ce-resume">
     <div class="container">
@@ -9,14 +9,14 @@
                         <f:render section="RowContent" arguments="{
                             headline: data.header,
                             list: resume_items,
-                            ContentAligment: ContentAligment
+                            contentAlignment: contentAlignment
                         }" />
                     </div>
                     <div class="col sm-12 md-6 lg-5 xl-4">
                         <f:render section="RowContent" arguments="{
                             headline: data.additional_header,
                             list: additional_resume_items,
-                            ContentAligment: ContentAligment
+                            contentAlignment: contentAlignment
                         }" />
                     </div>
                 </f:then>
@@ -27,14 +27,14 @@
                                 <f:render section="RowContent" arguments="{
                                     headline: data.header,
                                     list: resume_items,
-                                    ContentAligment: ContentAligment
+                                    contentAlignment: contentAlignment
                                 }" />
                             </f:then>
                             <f:else>
                                 <f:render section="RowContent" arguments="{
                                     headline: data.additional_header,
                                     list: additional_resume_items,
-                                    ContentAligment: ContentAligment
+                                    contentAlignment: contentAlignment
                                 }" />
                             </f:else>
                         </f:if>
@@ -46,7 +46,7 @@
 </section>
 
 <f:section name="RowContent">
-    <div class="ce-resume__header text-{ContentAligment}">
+    <div class="ce-resume__header text-{contentAlignment}">
         <f:render partial="Content/Atoms/Headline" arguments="{
             headline: headline
         }" />

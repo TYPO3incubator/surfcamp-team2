@@ -1,24 +1,30 @@
-<div class="section ce-services">
-	<div class="container">
-		<div class="row">
-			<div class="col sm-12 md-10 md-offset-1 lg-7 lg-offset-2 xl-8 xl-offset-2">
-				<f:render partial="Content/Atoms/Headline" arguments="{ headline: data.header, tag: data.header_layout }"></f:render>
-				<p>{data.subheader}</p>
-			</div>
-			<div class="col sm-12 md-12 xl-10 xl-offset-1">
-				<div class="row ce-services__item-list">
-					<f:for each="{services}" as="serviceItem" key="label">
-						<div class="col sm-12 md-6 lg-4">
-							<f:render partial="Content/Atoms/Card" arguments="{
-						title: serviceItem.data.name,
-						description: serviceItem.data.description,
-						showReadMore: false,
-					}" />
-						</div>
-					</f:for>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-</div>
+<f:variable name="contentAlignment" value="{site.settings.all.style.contentAlignment}"/>
+
+<section class="section ce-services">
+    <div class="container">
+        <div class="row">
+            <div class="col sm-12 md-10 md-offset-1 lg-7 lg-offset-2 xl-8 xl-offset-2 text-{contentAlignment}">
+                <f:render partial="Content/Atoms/Headline" arguments="{
+                	headline: data.header,
+                	tag: data.header_layout
+				}" />
+				<f:if condition="{data.subheader}">
+					<p>{data.subheader}</p>
+				</f:if>
+            </div>
+            <div class="col sm-12 md-12 xl-10 xl-offset-1">
+                <div class="row ce-services__item-list justify-content-{contentAlignment}">
+                    <f:for each="{services}" as="serviceItem" key="label">
+                        <div class="col sm-12 md-6 lg-4">
+                            <f:render partial="Content/Atoms/Card" arguments="{
+								title: serviceItem.data.name,
+								description: serviceItem.data.description,
+								showReadMore: false,
+							}" />
+                        </div>
+                    </f:for>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

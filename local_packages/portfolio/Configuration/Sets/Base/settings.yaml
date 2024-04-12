@@ -50,5 +50,5 @@ style:
       value: 'none'
   font: 'Roboto Slab'
   copyFont: 'Roboto'
-  contentAlignment: 'cente123r'
+  contentAlignment: 'center'
 

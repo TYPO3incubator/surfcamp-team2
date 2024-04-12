@@ -3,12 +3,12 @@
     xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
 >
 
-<f:variable name="ContentAligment" value="{site.settings.all.style.contentAlignment}" />
+<f:variable name="contentAlignment" value="{site.settings.all.style.contentAlignment}" />
 
-<section class="ce-introduction-card section text-{ContentAligment}">
+<section class="ce-introduction-card section text-{contentAlignment}">
     <div class="container">
         <div class="row">
-            <f:if condition="{ContentAligment} == 'center'">
+            <f:if condition="{contentAlignment} == 'center'">
                 <f:then>
                     <div class="col sm-12 md-offset-2 md-8 lg-offset-3 lg-6">
                         <f:render section="Image" arguments="{_all}" />
@@ -48,7 +48,7 @@
 </f:section>
 
 <f:section name="Content">
-    <div class="ce-introduction-card__content">
+    <div class="ce-introduction-card__content text-{contentAlignment}">
         <f:render partial="Content/Atoms/Headline" arguments="{
             headline: data.header,
             tag: data.header_layout
