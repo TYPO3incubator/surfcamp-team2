@@ -10,6 +10,8 @@
   );
   background-size: 150% 150%;
   animation: swizzle 15s ease infinite;
+  mask-repeat: no-repeat;
+  mask-position: center center;
 }
 
 @keyframes swizzle {
