@@ -8,7 +8,7 @@ return [
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'title' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.resume.item',
+        'title' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.resume.item',
         'delete' => 'deleted',
         'versioningWS' => true,
         'origUid' => 't3_origuid',
@@ -114,7 +114,7 @@ return [
             ],
         ],
         'position' => [
-            'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.position',
+            'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:field.position',
             'config' => [
                 'type' => 'input',
                 'size' => 50,
@@ -124,14 +124,14 @@ return [
             ],
         ],
         'description' => [
-            'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.description',
+            'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:field.description',
             'config' => [
                 'type' => 'text',
                 'eval' => 'trim',
             ],
         ],
         'location' => [
-            'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.location',
+            'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:field.location',
             'config' => [
                 'type' => 'input',
                 'size' => 50,
@@ -140,7 +140,7 @@ return [
             ],
         ],
         'time_period' => [
-            'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.time_period',
+            'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:field.time_period',
             'config' => [
                 'type' => 'input',
                 'size' => 50,
@@ -149,7 +149,7 @@ return [
             ],
         ],
         'institution' => [
-            'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.institution',
+            'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:field.institution',
             'config' => [
                 'type' => 'input',
                 'size' => 50,

@@ -9,8 +9,8 @@ ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
-        'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.client_logos',
-        'description' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.client_logos.description',
+        'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.client_logos',
+        'description' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.client_logos.description',
         'value' => 'client_logos',
         'icon' => 'icon_clients',
         'group' => 'default',
@@ -41,7 +41,7 @@ $GLOBALS['TCA']['tt_content']['types']['client_logos'] = [
 ];
 
 $GLOBALS['TCA']['tt_content']['columns']['client_logos'] = [
-    'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.client_logos',
+    'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.client_logos',
     'config' => [
         'type' => 'inline',
         'foreign_table' => 'tx_portfolio_client_logo',

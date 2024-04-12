@@ -1,4 +1,4 @@
-tt_content.resume =< lib.content
+tt_content.resume =< lib.contentElement
 tt_content.resume {
     templateName = Resume
 

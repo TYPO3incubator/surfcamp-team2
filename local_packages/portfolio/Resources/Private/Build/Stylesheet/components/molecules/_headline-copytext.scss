@@ -1,8 +1,7 @@
 .headline-copytext {
-    margin-bottom: $size-32;
-
     .headline {
-        margin-bottom: 0;
+        margin-bottom: $size-12;
+        @include last-no-margin('bottom');
     }
 
     .subheadline {
@@ -11,11 +10,24 @@
     }
 
     .content {
-        margin-top: $size-24;
+        margin-top: $size-32;
         @include first-no-margin('bottom');
     }
 
     @include breakpoint-up(md) {
+        .content {
+            margin-top: $size-48;
+            @include first-no-margin('bottom');
+        }
+    }
+}
+
+.ce__header {
+    margin-bottom: $size-32;
+    @include last-no-margin('bottom');
+
+    @include breakpoint-up(md) {
         margin-bottom: $size-48;
+        @include last-no-margin('bottom');
     }
 }

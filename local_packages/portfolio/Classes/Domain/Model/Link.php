@@ -1,6 +1,6 @@
 <?php
 
-namespace Surfcamp\Portfolio\Domain\Model;
+namespace FriendsOfTYPO3\ThemePortfolio\Domain\Model;
 
 use Symfony\Component\Config\Resource\FileResource;
 use TYPO3\CMS\Core\Resource\FileReference;

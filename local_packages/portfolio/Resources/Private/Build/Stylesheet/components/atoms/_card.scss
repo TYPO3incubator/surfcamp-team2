@@ -11,7 +11,6 @@
     height: 100%;
     border-radius: var(--button-border-radius);
     border: $size-2 solid var(--color-base-border);
-    margin-bottom: $size-24;
     transition: all .3s ease-in-out;
     .project-link{
       display: inline-block;
@@ -65,7 +64,7 @@
     color: var(--color-base-text-secondary);
   }
 
-  .section:nth-child(even) & {
+  .bg--section-background-light & {
     &__wrapper {
       background-color: var(--color-section-background-dark);
     }

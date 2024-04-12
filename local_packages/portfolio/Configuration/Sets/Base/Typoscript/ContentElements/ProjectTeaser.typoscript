@@ -1,4 +1,4 @@
-tt_content.project_teaser =< lib.content
+tt_content.project_teaser =< lib.contentElement
 tt_content.project_teaser {
     templateName = ProjectTeaser
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Surfcamp\Portfolio\UserFunctions;
+namespace FriendsOfTYPO3\ThemePortfolio\UserFunctions;
 
 use Psr\Http\Message\ServerRequestInterface;
 use TYPO3\CMS\Core\Utility\PathUtility;

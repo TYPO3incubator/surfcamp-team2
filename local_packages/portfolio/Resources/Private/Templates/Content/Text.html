@@ -1,17 +1,1 @@
-<f:variable name="contentAlignment" value="{site.settings.all.style.contentAlignment}"/>
-
-<div class="section ce-text {data.background}">
-    <div class="container">
-        <div class="row">
-            <div class="col sm-12 md-offset-2 md-8 xl-offset-3 xl-6">
-                <f:render partial="Content/Molecules/HeadlineCopytext" arguments="{
-					headline: data.header,
-					headlineTag: data.header_layout,
-					headlinePosition: '{f:if(condition: \'{contentAlignment} == center\', then: \'center\', else: data.header_position)}',
-					subheadline: data.subheader,
-					bodytext: data.bodytext
-				}"/>
-            </div>
-        </div>
-    </div>
-</div>
+<f:layout name="ContentBlock" />

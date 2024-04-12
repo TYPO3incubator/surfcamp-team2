@@ -9,8 +9,8 @@ ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
-        'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.resume',
-        'description' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.resume.description',
+        'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.resume',
+        'description' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.resume.description',
         'value' => 'resume',
         'icon' => 'icon_resume',
         'group' => 'default',
@@ -42,14 +42,14 @@ $GLOBALS['TCA']['tt_content']['types']['resume'] = [
 ];
 
 $GLOBALS['TCA']['tt_content']['columns']['additional_header'] = [
-    'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.additional_header',
+    'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:field.additional_header',
     'config' => [
         'type' => 'input',
     ]
 ];
 
 $GLOBALS['TCA']['tt_content']['columns']['resume_items'] = [
-    'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.resume.items',
+    'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.resume.items',
     'config' => [
         'type' => 'inline',
         'foreign_table' => 'tx_portfolio_resume_item',
@@ -61,7 +61,7 @@ $GLOBALS['TCA']['tt_content']['columns']['resume_items'] = [
 ];
 
 $GLOBALS['TCA']['tt_content']['columns']['additional_resume_items'] = [
-    'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.additional_resume_items',
+    'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:field.additional_resume_items',
     'config' => [
         'type' => 'inline',
         'foreign_table' => 'tx_portfolio_resume_item',

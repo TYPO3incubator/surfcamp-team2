@@ -1,7 +1,11 @@
 .ce-skill-display {
-  margin-top: var(--spacer-lg);
-
   &__list {
-    margin-top: var(--spacer-md);
+    display: flex;
+    gap: $col-padding;
+    margin-bottom: -$col-padding;
+
+    .pill {
+      margin-bottom: $col-padding;
+    }
   }
 }

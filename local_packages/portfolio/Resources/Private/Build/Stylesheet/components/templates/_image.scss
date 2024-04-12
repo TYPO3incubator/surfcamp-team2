@@ -1,15 +1,11 @@
 .ce-image {
-    &.ce-image.ce-image {
-        background-color: var(--color-base-background);
-    }
-
     .image {
         margin-bottom: $size-24;
         @include last-no-margin('bottom');
     }
 
     + .ce-image,
-    + .ce-text-image,
+    + .ce-textpic,
     + .ce-text {
         margin-top: calc(-1 * var(--spacer-lg));
     }

@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
 
-use Surfcamp\Portfolio\Controller\ProjectController;
-use Surfcamp\Portfolio\Hooks\PageRenderer\WebfontHook;
+use FriendsOfTYPO3\ThemePortfolio\Controller\ProjectController;
+use FriendsOfTYPO3\ThemePortfolio\Hooks\PageRenderer\WebfontHook;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
@@ -13,14 +13,14 @@ if (ExtensionManagementUtility::isLoaded('form')) {
             module.tx_form {
                 settings {
                     yamlConfigurations {
-                        110 = EXT:portfolio/Configuration/Form/Setup.yaml
+                        110 = EXT:theme_portfolio/Configuration/Form/Setup.yaml
                     }
                 }
             }
             plugin.tx_form {
                 settings {
                     yamlConfigurations {
-                        110 = EXT:portfolio/Configuration/Form/Setup.yaml
+                        110 = EXT:theme_portfolio/Configuration/Form/Setup.yaml
                     }
                 }
             }
@@ -29,7 +29,7 @@ if (ExtensionManagementUtility::isLoaded('form')) {
 }
 
 ExtensionUtility::configurePlugin(
-    'Portfolio',
+    'ThemePortfolio',
     'Projects',
     [
         ProjectController::class => ['list', 'show'],

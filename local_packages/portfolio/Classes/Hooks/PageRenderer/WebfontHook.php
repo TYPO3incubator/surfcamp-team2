@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-namespace Surfcamp\Portfolio\Hooks\PageRenderer;
+namespace FriendsOfTYPO3\ThemePortfolio\Hooks\PageRenderer;
 
 use Psr\Http\Message\ServerRequestInterface;
 use TYPO3\CMS\Core\Http\ApplicationType;
@@ -27,8 +27,8 @@ class WebfontHook
         $this->includeFont($settings['style']['font'], $pagerenderer);
         $this->includeFont($settings['style']['copyFont'], $pagerenderer);
 
-        $pagerenderer->addCssFile('EXT:portfolio/Resources/Public/Fonts/roboto/webfont.css');
-        $pagerenderer->addCssFile('EXT:portfolio/Resources/Public/Fonts/roboto-slab/webfont.css');
+        $pagerenderer->addCssFile('EXT:theme_portfolio/Resources/Public/Fonts/roboto/webfont.css');
+        $pagerenderer->addCssFile('EXT:theme_portfolio/Resources/Public/Fonts/roboto-slab/webfont.css');
     }
 
     protected function includeFont($name, $pagerenderer) {
@@ -42,7 +42,7 @@ class WebfontHook
     {
         $name = strtolower($name);
         $name = str_replace(' ', '-', $name);
-        $filename = 'EXT:portfolio/Resources/Public/Fonts/' . $name .'/webfont.css';
+        $filename = 'EXT:theme_portfolio/Resources/Public/Fonts/' . $name .'/webfont.css';
         if (file_exists(GeneralUtility::getFileAbsFileName($filename))) {
             return $filename;
         }

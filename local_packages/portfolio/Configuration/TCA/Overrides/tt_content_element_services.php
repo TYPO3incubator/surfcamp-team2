@@ -10,8 +10,8 @@ ExtensionManagementUtility::addTcaSelectItem(
     'tt_content',
     'CType',
     [
-        'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.services',
-        'description' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.services.description',
+        'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.services',
+        'description' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.services.description',
         'value' => 'services',
         'icon' => 'icon_services',
         'group' => 'default',
@@ -46,7 +46,7 @@ $GLOBALS['TCA']['tt_content']['types']['services'] = [
 ];
 
 $GLOBALS['TCA']['tt_content']['columns']['services'] = [
-    'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.services',
+    'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.services',
     'config' => [
         'type' => 'inline',
         'foreign_table' => 'tx_portfolio_service',

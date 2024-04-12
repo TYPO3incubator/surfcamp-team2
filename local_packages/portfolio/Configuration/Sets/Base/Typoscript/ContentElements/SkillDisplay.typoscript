@@ -1,4 +1,4 @@
-tt_content.skill_display =< lib.content
+tt_content.skill_display =< lib.contentElement
 tt_content.skill_display {
     templateName = SkillDisplay
 

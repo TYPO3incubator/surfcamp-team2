@@ -53,10 +53,10 @@ style:
       value: 'dark'
     buttonBorderRadius:
       key: 'button-border-radius'
-      value: 'none'
+      value: 'rounded'
   font: 'Roboto Slab'
   copyFont: 'Roboto'
-  contentAlignment: 'center'
+  contentAlignment: 'left'
 
 logo:
   path: '/fileadmin/logo/georg-ringer.svg'

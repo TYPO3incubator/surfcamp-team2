@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file source-language="en" datatype="plaintext" original="EXT:portfolio/Resources/Private/Language/locallang_db.xlf" product-name="portfolio">
+	<file source-language="en" datatype="plaintext" original="EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf" product-name="portfolio">
 		<header/>
 		<body>
 			<trans-unit id="content_element.introduction_card" resname="content_element.introduction_card" xml:space="preserve">
@@ -59,10 +59,10 @@
 			<trans-unit id="content_element.client_logos.description">
 				<source>A element to present all logos of a list of clients</source>
 			</trans-unit>
-			<trans-unit id="content_element.portfolio_projects">
+			<trans-unit id="content_element.themeportfolio_projects">
 				<source>Projects List</source>
 			</trans-unit>
-			<trans-unit id="content_element.portfolio_projects.description">
+			<trans-unit id="content_element.themeportfolio_projects.description">
 				<source>A element to present all projects including details</source>
 			</trans-unit>
 			<trans-unit id="content_element.project_teaser">
