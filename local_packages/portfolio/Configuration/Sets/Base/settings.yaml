@@ -43,10 +43,10 @@ style:
   variables:
     primaryColor:
       key: 'color-primary'
-      value: '#000000'
+      value: '#ff854d'
     secondaryColor:
       key: 'color-secondary'
-      value: '#000000'
+      value: '#ff854d'
   data:
     theme:
       key: 'theme'
@@ -54,5 +54,9 @@ style:
     buttonBorderRadius:
       key: 'button-border-radius'
       value: 'none'
+  font: 'Roboto Slab'
+  copyFont: 'Roboto'
+  contentAlignment: 'center'
+
 logo:
   path: '/fileadmin/logo/georg-ringer.svg'

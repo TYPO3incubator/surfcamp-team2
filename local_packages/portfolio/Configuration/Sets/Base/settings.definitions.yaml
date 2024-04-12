@@ -98,7 +98,7 @@ settings:
     label: 'Color of the primary color'
     description: 'The color value for the primary color'
     type: color
-    default: ''
+    default: '#ff854d'
   style.variable.secondaryColor.key:
     label: 'Name for the primary color'
     description: 'The name of the variable for the primary color'
@@ -108,7 +108,7 @@ settings:
     label: 'Color of the secondary color'
     description: 'The color value for the secondary color'
     type: color
-    default: ''
+    default: '#ff854d'
   style.data.theme.key:
     label: 'Name for the theme data attribute'
     description: 'The name of the variable for the theme data attribute'
@@ -129,6 +129,21 @@ settings:
     description: 'The radius of the button border'
     type: string
     default: none
+  style.font:
+    label: 'Font'
+    description: 'The font for the website'
+    type: string
+    default: 'Roboto Slab'
+  style.copyFont:
+    label: 'Copy Font'
+    description: 'The font for the copy text'
+    type: string
+    default: 'Roboto'
+  style.contentAlignment:
+    label: 'Content Alignment'
+    description: 'The alignment of the content'
+    type: string
+    default: 'center'
   logo.path:
     label: 'Logo Path'
     description: 'Fileadmin path to the logo file'
