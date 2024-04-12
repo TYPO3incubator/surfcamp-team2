@@ -41,6 +41,31 @@ You can change the theme in the settings with ```style.data.theme```. In the fol
 |```style.variables.primaryColor.value```|For defining the primary color used for buttons and links|```#ff854d```|all hex color values|
 |```style.variables.secondaryColor.value```|For defining the hover color and accent elements|```#ff854d```|all hex color values|
 |```style.data.buttonBorderRadius.value```|For defining the corner styles of buttons, cards and icons|```none```|```non```, ```rounded```, ```round```|
+|```style.font```|Font family for the headline font|Roboto Slab|...|
+|```style.copyFont```|Font family for the text font|Roboto|...|
+|```style.contentAlignment```|Defining the content alignment|```center```|```center```, ```left```|
+|```style.logo.path```|Defining the logo path in fileadmin|```/fileadmin/logo/typo3_logo.svg```|define the correct path|
+
 
 ## Socials
 
+For adding links to your social media accounts you just need to add links to your accounts in the sets. The following social media channels are yet supported:
+
+| Channel| Identifier|
+|--------|-----------|
+| Facebook | ```socials.channels.facebook.link``` |
+| Instagram | ```socials.channels.instagram.link``` |
+| Threads | ```socials.channels.threads.link``` |
+| Whatsapp | ```socials.channels.whatsapp.link``` |
+| YouTube | ```socials.channels.youtube.link``` |
+| Vimeo | ```socials.channels.vimeo.link``` |
+| Xing | ```socials.channels.xing.link``` |
+| Linkedin | ```socials.channels.linkedin.link``` |
+| Pinterest | ```socials.channels.pinterest.link``` |
+| Snapchat | ```socials.channels.snapchat.link``` |
+| TikTok | ```socials.channels.tiktok.link``` |
+| Reddit | ```socials.channels.reddit.link``` |
+| Xxxx | ```socials.channels.x.link``` |
+| Twitch | ```socials.channels.twitch.link``` |
+| tumblr | ```socials.channels.tumblr.link``` |
+| GitHub | ```socials.channels.github.link``` |
