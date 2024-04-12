@@ -1,5 +1,20 @@
+<f:variable name="contentAlignment" value="{site.settings.all.style.contentAlignment}"/>
+
 <section class="project-list section">
     <div class="container">
+        <f:if condition="{data.header} || {data.subheader} || {data.bodytext}">
+            <div class="row">
+                <div class="col sm-12 md-10 md-offset-1 lg-7 lg-offset-2 xl-8 xl-offset-2">
+                    <f:render partial="Content/Molecules/HeadlineCopytext" arguments="{
+                        headline: data.header,
+                        headlineTag: data.header_layout,
+                        headlinePosition: '{f:if(condition: \'{contentAlignment} == center\', then: \'center\', else: data.header_position)}',
+                        subheadline: data.subheader,
+                        bodytext: data.bodytext
+                    }"/>
+                </div>
+            </div>
+        </f:if>
         <div class="row">
             <f:for each="{projects}" as="project">
                 <div class="col sm-12 md-6 lg-4">
