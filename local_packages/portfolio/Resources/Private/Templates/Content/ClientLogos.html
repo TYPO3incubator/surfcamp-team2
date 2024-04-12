@@ -4,15 +4,6 @@
 	<div class="container">
 		<div class="row">
 			<div class="col sm-12 md-10 md-offset-1 lg-7 lg-offset-2 xl-8 xl-offset-2">
-				<f:render partial="Content/Molecules/HeadlineCopytext" arguments="{
-                    headline: data.header,
-                    headlineTag: data.header_layout,
-                    headlinePosition: '{f:if(condition: \'{contentAlignment} == center\', then: \'center\', else: data.header_position)}',
-                    subheadline: data.subheader,
-                    bodytext: data.bodytext
-                }" />
-			</div>
-			<div class="col sm-12 md-10 md-offset-1 lg-7 lg-offset-2 xl-8 xl-offset-2">
 				<div class="row ce-client-logos__item-list justify-content-{contentAlignment}">
 					<f:for each="{client_logos}" as="client" key="label">
 						<portfolio:inlineSvg image="{client.images.0}" class="ce-client-logos__list-item"></portfolio:inlineSvg>
