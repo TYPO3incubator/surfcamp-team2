@@ -4,7 +4,7 @@ The portfolio extension is a versatile TYPO3 extension designed for developers, 
 
 ## Setup
 In order to setup the extension you need to install the extension with composer or via the extension manager in TYPO3
-- ```composer install surfcamp/portfolio```
+- ```composer req friendsoftypo3/theme-portfolio```
 - ...
 
 ## Content Elements
