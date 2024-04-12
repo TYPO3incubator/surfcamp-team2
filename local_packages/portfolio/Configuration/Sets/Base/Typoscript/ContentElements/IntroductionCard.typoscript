@@ -8,8 +8,6 @@ tt_content.introduction_card {
             references.fieldName = image
             as = image
         }
-
-        20 = site
     }
 }
 

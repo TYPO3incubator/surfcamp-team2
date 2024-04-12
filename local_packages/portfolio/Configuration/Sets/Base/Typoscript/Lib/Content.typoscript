@@ -4,7 +4,5 @@ lib.content {
     partialRootPaths.10 = EXT:portfolio/Resources/Private/Templates/Partials/
     templateRootPaths.10 = EXT:portfolio/Resources/Private/Templates/Content/
 
-    variables {
-        site = site
-    }
+    dataProcessing.1712913685 = site
 }

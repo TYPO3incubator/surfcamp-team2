@@ -139,3 +139,8 @@ settings:
     description: 'The font for the copy text'
     type: string
     default: 'Roboto'
+  style.contentAlignment:
+    label: 'Content Alignment'
+    description: 'The alignment of the content'
+    type: string
+    default: 'center'

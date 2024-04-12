@@ -1,6 +1,6 @@
-tt_content.services < lib.content
+tt_content.services =< lib.content
 tt_content.services {
-    templateName = Services.html
+    templateName = Services
 
     dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor

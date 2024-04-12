@@ -1,6 +1,6 @@
-tt_content.resume < lib.content
+tt_content.resume =< lib.content
 tt_content.resume {
-    templateName = Resume.html
+    templateName = Resume
 
     dataProcessing {
         10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
