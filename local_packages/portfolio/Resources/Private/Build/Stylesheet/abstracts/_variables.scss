@@ -108,8 +108,8 @@ $font-size-h6-lg:       $font-20;
 // * semantics
 $base-text-color:             var(--color-base-text);
 $base-text-size:              $font-18;
-$selection-text-color:        rgba(var(--color-primary), .8);
-$selection-background-color:  rgba(white, .3);
+$selection-text-color:        var(--color-primary);
+$selection-background-color:  rgba(200, 200, 200, .5);
 
 // Spaces
 // * primitives
