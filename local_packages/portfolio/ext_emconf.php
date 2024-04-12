@@ -1,8 +1,8 @@
 <?php
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'TYPO3 Portfolio Set',
-    'description' => '',
-    'category' => '',
+    'title' => 'Portfolio Theme',
+    'description' => 'TYPO3 theme for a portfolio website',
+    'category' => 'Theme',
     'state' => 'alpha',
     'author' => 'Felix Pachowsky',
     'author_email' => 'f.pachowsky@googlemail.com',
@@ -11,7 +11,7 @@ $EM_CONF[$_EXTKEY] = [
     'constraints' => [
         'depends' => [
             'php' => '8.2-',
-            'typo3' => '11.5-',
+            'typo3' => '13.0-',
         ],
         'conflicts' => [
         ],

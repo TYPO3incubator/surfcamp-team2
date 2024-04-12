@@ -1,11 +1,11 @@
 <?php
 
-namespace Surfcamp\Portfolio\Controller;
+namespace FriendsOfTYPO3\ThemePortfolio\Controller;
 
 use Psr\Http\Message\ResponseInterface;
-use Surfcamp\Portfolio\Domain\Model\Project;
+use FriendsOfTYPO3\ThemePortfolio\Domain\Model\Project;
 use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
-use Surfcamp\Portfolio\Domain\Repository\ProjectRepository;
+use FriendsOfTYPO3\ThemePortfolio\Domain\Repository\ProjectRepository;
 
 class ProjectController extends ActionController
 {

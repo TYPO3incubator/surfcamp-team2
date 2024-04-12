@@ -8,7 +8,7 @@ return [
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
-        'title' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display.skill',
+        'title' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.skill_display.skill',
         'delete' => 'deleted',
         'versioningWS' => true,
         'origUid' => 't3_origuid',
@@ -111,7 +111,7 @@ return [
             ],
         ],
         'name' => [
-            'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.name',
+            'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:field.name',
             'config' => [
                 'type' => 'input',
                 'size' => 50,
@@ -121,7 +121,7 @@ return [
             ],
         ],
         'image' => [
-            'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.image',
+            'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:field.image',
             'config' => [
                 'type' => 'file',
                 'allowed' => 'common-media-types',

@@ -4,7 +4,7 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:tx_portfolio_domain_model_project',
+        'title' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:tx_portfolio_domain_model_project',
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -14,7 +14,7 @@ return [
             'disabled' => 'hidden',
         ],
         'searchFields' => 'title',
-        'iconfile' => 'EXT:portfolio/Resources/Public/Icons/Backend/project.png',
+        'iconfile' => 'EXT:theme_portfolio/Resources/Public/Icons/Backend/project.png',
     ],
     'types' => [
         '1' => ['showitem' => '
@@ -46,7 +46,7 @@ return [
             ],
         ],
         'title' => [
-            'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.title',
+            'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:field.title',
             'config' => [
                 'type' => 'input',
                 'size' => 50,
@@ -55,21 +55,21 @@ return [
             ],
         ],
         'description' => [
-            'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.description',
+            'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:field.description',
             'config' => [
                 'type' => 'text',
                 'enableRichtext' => true,
             ],
         ],
         'show_detail_page' => [
-            'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.showDetailPage',
+            'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:field.showDetailPage',
             'config' => [
                 'type' => 'check',
                 'default' => false,
             ],
         ],
         'links' => [
-            'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.links',
+            'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:field.links',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_portfolio_domain_model_link',
@@ -83,7 +83,7 @@ return [
             ],
         ],
         'images' => [
-            'label' => 'LLL:EXT:portfolio/Resources/Private/Language/locallang_db.xlf:field.image',
+            'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:field.image',
             'config' => [
                 'type' => 'inline',
                 'foreign_field' => 'parent',
