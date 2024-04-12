@@ -22,10 +22,12 @@
 $body-bg-color:             var(--color-background);
 
 $colors: (
-        'primary':            var(--color-primary),
-        'secondary':          var(--color-secondary),
-        'base-background':    var(--color-base-background),
-        'base-text':          var(--color-base-text),
+    'primary':            var(--color-primary),
+    'secondary':          var(--color-secondary),
+    'base-background':    var(--color-base-background),
+    'base-text':          var(--color-base-text),
+    'section-background-light':          var(--color-section-background-light),
+    'section-background-dark':           var(--color-section-background-dark)
 );
 
 // Typography
