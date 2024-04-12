@@ -29,7 +29,7 @@ if (ExtensionManagementUtility::isLoaded('form')) {
 }
 
 ExtensionUtility::configurePlugin(
-    'Portfolio',
+    'ThemePortfolio',
     'Projects',
     [
         ProjectController::class => ['list', 'show'],

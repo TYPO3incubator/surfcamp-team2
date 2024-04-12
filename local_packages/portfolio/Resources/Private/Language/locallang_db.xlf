@@ -59,10 +59,10 @@
 			<trans-unit id="content_element.client_logos.description">
 				<source>A element to present all logos of a list of clients</source>
 			</trans-unit>
-			<trans-unit id="content_element.portfolio_projects">
+			<trans-unit id="content_element.themeportfolio_projects">
 				<source>Projects List</source>
 			</trans-unit>
-			<trans-unit id="content_element.portfolio_projects.description">
+			<trans-unit id="content_element.themeportfolio_projects.description">
 				<source>A element to present all projects including details</source>
 			</trans-unit>
 			<trans-unit id="content_element.project_teaser">

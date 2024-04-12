@@ -121,11 +121,11 @@ $GLOBALS['TCA']['tt_content']['palettes']['frames'] = array_replace_recursive(
 
 call_user_func(static function () {
     \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
-        'Portfolio',
+        'ThemePortfolio',
         'Projects',
-        'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.portfolio_projects',
+        'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.themeportfolio_projects',
         'icon_project',
         'default',
-        'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.portfolio_projects.description',
+        'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.themeportfolio_projects.description',
     );
 });

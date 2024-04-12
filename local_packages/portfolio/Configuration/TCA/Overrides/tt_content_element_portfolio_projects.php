@@ -2,25 +2,9 @@
 
 declare(strict_types=1);
 
-use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
-
 defined('TYPO3') or die();
 
-ExtensionManagementUtility::addTcaSelectItem(
-    'tt_content',
-    'CType',
-    [
-        'label' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.portfolio_projects',
-        'description' => 'LLL:EXT:theme_portfolio/Resources/Private/Language/locallang_db.xlf:content_element.portfolio_projects.description',
-        'value' => 'portfolio_projects',
-        'icon' => 'icon_project',
-        'group' => 'default',
-    ],
-    '--div--',
-    'after'
-);
-
-$GLOBALS['TCA']['tt_content']['types']['portfolio_projects'] = [
+$GLOBALS['TCA']['tt_content']['types']['themeportfolio_projects'] = [
     'showitem' => '
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;minimalHeaders,
