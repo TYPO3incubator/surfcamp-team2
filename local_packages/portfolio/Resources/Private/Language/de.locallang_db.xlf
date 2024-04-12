@@ -92,7 +92,7 @@
 				<source>A element to present the latest projects</source>
 				<target>Ein Element zum Anteasern der letzten Projekte</target>
 			</trans-unit>
-		
+
 			<trans-unit id="field.link">
 				<source>Link</source>
 				<target>Link</target>
@@ -136,6 +136,34 @@
 			<trans-unit id="field.links">
 				<source>Links</source>
 				<target>Links</target>
+			</trans-unit>
+			<trans-unit id="field.header_style">
+				<source>Header Style</source>
+				<target>Header Style</target>
+			</trans-unit>
+			<trans-unit id="field.header_style.h1">
+				<source>h1</source>
+				<target>h1</target>
+			</trans-unit>
+			<trans-unit id="field.header_style.h2">
+				<source>h2</source>
+				<target>h2</target>
+			</trans-unit>
+			<trans-unit id="field.header_style.h3">
+				<source>h3</source>
+				<target>h3</target>
+			</trans-unit>
+			<trans-unit id="field.header_style.h4">
+				<source>h4</source>
+				<target>h4</target>
+			</trans-unit>
+			<trans-unit id="field.header_style.h5">
+				<source>h5</source>
+				<target>h5</target>
+			</trans-unit>
+			<trans-unit id="field.header_style.h6">
+				<source>h6</source>
+				<target>h6</target>
 			</trans-unit>
 			<trans-unit id="field.showDetailPage">
 				<source>Show detail page</source>

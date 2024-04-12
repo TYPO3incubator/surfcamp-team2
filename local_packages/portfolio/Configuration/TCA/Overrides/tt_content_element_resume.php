@@ -22,7 +22,7 @@ ExtensionManagementUtility::addTcaSelectItem(
 $GLOBALS['TCA']['tt_content']['types']['resume'] = [
     'showitem' => '
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-        header,
+        --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header;minimalHeader,
         resume_items,
         additional_header,
         additional_resume_items,

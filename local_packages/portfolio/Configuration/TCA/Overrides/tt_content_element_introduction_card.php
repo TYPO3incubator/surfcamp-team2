@@ -22,8 +22,7 @@ ExtensionManagementUtility::addTcaSelectItem(
 $GLOBALS['TCA']['tt_content']['types']['introduction_card'] = [
     'showitem' => '
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-        header,
-        header_layout,
+        --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.header;minimalHeader,
         bodytext,
         link,
         link_text,
