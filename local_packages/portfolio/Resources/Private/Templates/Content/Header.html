@@ -1,1 +1,13 @@
-<h1>{data.title}</h1>
+<div class="section ce-header">
+    <div class="container">
+        <div class="row">
+            <div class="col sm-12 md-offset-2 md-8 xl-offset-3 xl-6">
+                <f:render partial="Content/Molecules/HeadlineCopytext" arguments="{
+                    headline: data.header,
+                    headlinePosition: data.header_position,
+                    headlineTag: data.header_layout,
+                }"/>
+            </div>
+        </div>
+    </div>
+</div>
