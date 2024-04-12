@@ -68,10 +68,6 @@ body {
       margin-top: $size-16;
     }
   }
-
-  .section:nth-child(even) {
-    background-color: var(--color-section-background-light);
-  }
 }
 
 section,

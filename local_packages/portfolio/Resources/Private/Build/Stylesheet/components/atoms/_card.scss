@@ -65,7 +65,7 @@
     color: var(--color-base-text-secondary);
   }
 
-  .section:nth-child(even) & {
+  .bg--section-background-light & {
     &__wrapper {
       background-color: var(--color-section-background-dark);
     }
