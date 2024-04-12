@@ -9,7 +9,8 @@ tt_content.project_teaser {
             pidInList {
                 field = pages
             }
-            orderBy = crdate DESC
+            max = 3
+            orderBy = crdate ASC
             as = projects
         }
     }
