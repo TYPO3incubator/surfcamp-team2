@@ -23,9 +23,7 @@ ExtensionManagementUtility::addTcaSelectItem(
 $GLOBALS['TCA']['tt_content']['types']['portfolio_projects'] = [
     'showitem' => '
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-        header,
-        header_layout,
-        subheader,
+        --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;minimalHeaders,
         pages,
         recursive,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,

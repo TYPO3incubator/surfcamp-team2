@@ -23,9 +23,7 @@ ExtensionManagementUtility::addTcaSelectItem(
 $GLOBALS['TCA']['tt_content']['types']['skill_display'] = [
     'showitem' => '
         --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.general;general,
-        header,
-        header_layout,
-        subheader,
+        --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.headers;minimalHeaders,
         skills,
         show_progress_level,
         --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
