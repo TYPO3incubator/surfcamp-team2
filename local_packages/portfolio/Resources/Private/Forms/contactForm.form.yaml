@@ -51,6 +51,20 @@ renderables:
               elementDescription: ''
               fluidAdditionalAttributes:
                 required: required
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  lg:
+                    numbersOfColumnsToUse: '6'
+                  xl:
+                    numbersOfColumnsToUse: '6'
+                  xxl:
+                    numbersOfColumnsToUse: '6'
             validators:
               -
                 identifier: NotEmpty
@@ -62,6 +76,20 @@ renderables:
             properties:
               fluidAdditionalAttributes:
                 required: required
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '12'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  lg:
+                    numbersOfColumnsToUse: '6'
+                  xl:
+                    numbersOfColumnsToUse: '6'
+                  xxl:
+                    numbersOfColumnsToUse: '6'
             validators:
               -
                 identifier: NotEmpty
@@ -95,50 +123,9 @@ renderables:
         identifier: checkbox-1
         label: 'Privacy Policy'
         properties:
-          elementDescription: 'I accept the Privacy Policy'
+          elementDescription: 'I accept the privacy policy'
           fluidAdditionalAttributes:
             required: required
-          validationErrorMessages:
-            -
-              code: 1221560910
-              message: 'Please fill out this field'
-            -
-              code: 1221560718
-              message: 'Please fill out this field'
-            -
-              code: 1347992400
-              message: 'Please fill out this field'
-            -
-              code: 1347992453
-              message: 'Please fill out this field'
-        validators:
-          -
-            identifier: NotEmpty
-      -
-        properties:
-          options:
-            Mr.: Mr.
-            Ms: Ms
-            Divers: Divers
-          fluidAdditionalAttributes:
-            required: required
-          validationErrorMessages:
-            -
-              code: 1221560910
-              message: 'dfssdf sfd sdfs df'
-            -
-              code: 1221560718
-              message: 'dfssdf sfd sdfs df'
-            -
-              code: 1347992400
-              message: 'dfssdf sfd sdfs df'
-            -
-              code: 1347992453
-              message: 'dfssdf sfd sdfs df'
-        type: RadioButton
-        identifier: radiobutton-1
-        label: 'Radio button'
-        defaultValue: Mr.
         validators:
           -
             identifier: NotEmpty
