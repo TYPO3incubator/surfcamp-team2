@@ -18,17 +18,17 @@
         }
 
         .row {
-            margin-left: $col-padding / -2;
-            margin-right: $col-padding / -2;
+            margin-left: calc($col-padding / -2);
+            margin-right: calc($col-padding / -2);
             width: calc(100% + #{$col-padding});
         }
 
         [class*='col-'] {
-            padding: 0 ($col-padding / 2);
+            padding: 0 (calc($col-padding / 2));
         }
 
         .form-group {
-            margin-bottom: $col-padding / 1.5;
+            margin-bottom: calc($col-padding / 1.5);
         }
 
         .form-label {
