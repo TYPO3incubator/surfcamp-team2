@@ -4,7 +4,7 @@ TYPO3:
       persistenceManager:
         allowSaveToExtensionPaths: true
         allowedExtensionPaths:
-          110: EXT:portfolio/Resources/Private/Forms/
+          110: EXT:portfolio/Resources/Private/SOME/
       prototypes:
         standard:
           formElementsDefinition:
