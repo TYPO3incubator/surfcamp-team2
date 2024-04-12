@@ -1,7 +1,5 @@
 .ce-skill-display {
-  margin-top: var(--spacer-lg);
-
   &__list {
-    margin-top: var(--spacer-md);
+    gap: $col-padding;
   }
 }

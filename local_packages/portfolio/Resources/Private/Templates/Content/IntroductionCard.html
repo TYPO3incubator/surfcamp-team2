@@ -1,11 +1,7 @@
-<html
-    data-namespace-typo3-fluid="true"
-    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
->
-
-<f:variable name="contentAlignment" value="{site.settings.all.style.contentAlignment}" />
-
-<section class="ce-introduction-card section text-{contentAlignment} {data.background}">
+<f:layout name="ContentBlock" />
+<f:section name="Header" />
+<f:section name="Main">
+    <f:variable name="contentAlignment" value="{site.settings.all.style.contentAlignment}" />
     <div class="container">
         <div class="row">
             <f:if condition="{contentAlignment} == 'center'">
@@ -35,10 +31,11 @@
             </f:if>
         </div>
     </div>
-</section>
+
+</f:section>
 
 <f:section name="Image">
-    <div class="ce-introduction-card__image">
+    <div class="ce-introduction-card__image text-{contentAlignment}">
         <div class="image">
             <div class="object-fit ratio--1-1">
                 <f:image image="{image.0}" />
