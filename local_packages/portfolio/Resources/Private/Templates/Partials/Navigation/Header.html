@@ -4,7 +4,16 @@
 >
 
 <header class="header">
-    <a href="/" class="header__logo">{site.configuration.websiteTitle}</a>
+    <a href="/" class="header__logo">
+        <f:if condition="{settings.logo}">
+            <f:then>
+                <img src="{settings.logo.path}" alt="{site.configuration.websiteTitle}"/>
+            </f:then>
+            <f:else>
+                {site.configuration.websiteTitle}
+            </f:else>
+        </f:if>
+    </a>
 
     <f:render partial="Content/Molecules/MenuList" arguments="{
         menu: headerMenu,

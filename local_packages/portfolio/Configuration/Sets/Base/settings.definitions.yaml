@@ -129,3 +129,8 @@ settings:
     description: 'The radius of the button border'
     type: string
     default: none
+  logo.path:
+    label: 'Logo Path'
+    description: 'Fileadmin path to the logo file'
+    type: string
+    default: '/fileadmin/logo/typo3_logo.svg'

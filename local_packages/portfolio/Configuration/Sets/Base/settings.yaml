@@ -8,9 +8,9 @@ socials:
   showActionButtons: true
   channels:
     facebook:
-      link: 'https://www.facebook.com/'
+      link: ''
     instagram:
-      link: 'https://www.instagram.com/'
+      link: ''
     threads:
       link: ''
     whatsapp:
@@ -20,9 +20,9 @@ socials:
     vimeo:
       link: ''
     xing:
-      link: 'https://www.xing.com/'
+      link: 'https://www.xing.com/profile/Georg_Ringer'
     linkedin:
-      link: ''
+      link: 'https://www.linkedin.com/in/georgringer'
     pinterest:
       link: ''
     snapchat:
@@ -30,13 +30,15 @@ socials:
     tiktok:
       link: ''
     reddit:
-      link: 'https://www.reddit.com/'
-    x:
       link: ''
+    x:
+      link: 'https://twitter.com/georg_ringer'
     twitch:
       link: ''
     tumblr:
       link: ''
+    github:
+      link: 'https://github.com/georgringer'
 style:
   variables:
     primaryColor:
@@ -52,3 +54,5 @@ style:
     buttonBorderRadius:
       key: 'button-border-radius'
       value: 'none'
+logo:
+  path: '/fileadmin/logo/georg-ringer.svg'
