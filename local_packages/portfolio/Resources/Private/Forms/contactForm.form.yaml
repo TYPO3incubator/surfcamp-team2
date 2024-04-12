@@ -90,3 +90,55 @@ renderables:
         validators:
           -
             identifier: NotEmpty
+      -
+        type: Checkbox
+        identifier: checkbox-1
+        label: 'Privacy Policy'
+        properties:
+          elementDescription: 'I accept the Privacy Policy'
+          fluidAdditionalAttributes:
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Please fill out this field'
+            -
+              code: 1221560718
+              message: 'Please fill out this field'
+            -
+              code: 1347992400
+              message: 'Please fill out this field'
+            -
+              code: 1347992453
+              message: 'Please fill out this field'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        properties:
+          options:
+            Mr.: Mr.
+            Ms: Ms
+            Divers: Divers
+          fluidAdditionalAttributes:
+            required: required
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'dfssdf sfd sdfs df'
+            -
+              code: 1221560718
+              message: 'dfssdf sfd sdfs df'
+            -
+              code: 1347992400
+              message: 'dfssdf sfd sdfs df'
+            -
+              code: 1347992453
+              message: 'dfssdf sfd sdfs df'
+        type: RadioButton
+        identifier: radiobutton-1
+        label: 'Radio button'
+        defaultValue: Mr.
+        validators:
+          -
+            identifier: NotEmpty
