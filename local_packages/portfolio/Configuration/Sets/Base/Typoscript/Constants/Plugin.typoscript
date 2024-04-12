@@ -1,0 +1,5 @@
+plugin.form.view {
+  templateRootPath = EXT:portfolio/Resources/Private/Templates/Form/Templates/
+  partialRootPath = EXT:portfolio/Resources/Private/Templates/Form/Partials/
+  layoutRootPath = EXT:portfolio/Resources/Private/Templates/Form/Layouts/
+}

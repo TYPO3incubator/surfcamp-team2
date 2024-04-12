@@ -1,0 +1,13 @@
+plugin.tx_form {
+  view {
+    templateRootPaths.2 = {$plugin.form.view.templateRootPath}
+
+    partialRootPaths {
+      2 = {$plugin.form.view.partialRootPath}
+      20 = EXT:portfolio/Resources/Private/Templates/Partials/
+      30 = EXT:portfolio/Resources/Private/Templates/Partials/Content/
+    }
+
+    layoutRootPaths.2 = {$plugin.form.view.layoutRootPath}
+  }
+}
