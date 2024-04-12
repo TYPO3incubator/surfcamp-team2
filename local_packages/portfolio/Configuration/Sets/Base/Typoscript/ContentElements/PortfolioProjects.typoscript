@@ -1,9 +1,9 @@
-tt_content.portfolio_projects =< lib.content
-tt_content.portfolio_projects {
+tt_content.themeportfolio_projects =< lib.content
+tt_content.themeportfolio_projects {
     templateName = Generic
     20 = EXTBASEPLUGIN
     20 {
-        extensionName = Portfolio
+        extensionName = ThemePortfolio
         pluginName = Projects
     }
 }
