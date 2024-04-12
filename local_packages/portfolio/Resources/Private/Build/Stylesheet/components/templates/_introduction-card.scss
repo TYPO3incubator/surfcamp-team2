@@ -56,10 +56,8 @@
 
         &__image {
             margin-bottom: 0;
-        }
 
-        &.text-center {
-            #{$component}__image {
+            &.text-center {
                 margin-bottom: $size-24;
             }
         }

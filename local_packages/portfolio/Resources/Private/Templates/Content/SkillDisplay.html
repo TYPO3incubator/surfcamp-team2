@@ -1,10 +1,10 @@
 <f:layout name="ContentBlock" />
 <f:section name="Main">
-
+	<f:variable name="contentAlignment" value="{site.settings.all.style.contentAlignment}" />
 	<div class="container">
 		<div class="row">
 			<div class="col sm-12 md-10 md-offset-1 lg-7 lg-offset-2 xl-8 xl-offset-2">
-				<div class="ce-skill-display__list">
+				<div class="ce-skill-display__list justify-content-{contentAlignment}">
 					<f:for each="{skills}" as="skill">
 						<f:if condition="{data.show_progress_level}">
 							<f:then>
@@ -15,8 +15,8 @@
 							</f:then>
 							<f:else>
 								<f:render partial="Content/Atoms/Pill" arguments="{
-							text: skill.data.name
-						}" />
+									text: skill.data.name
+								}" />
 							</f:else>
 						</f:if>
 					</f:for>
