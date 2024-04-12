@@ -10,8 +10,15 @@
     }
 
     .content {
-        margin-top: $size-24;
+        margin-top: $size-32;
         @include first-no-margin('bottom');
+    }
+
+    @include breakpoint-up(md) {
+        .content {
+            margin-top: $size-48;
+            @include first-no-margin('bottom');
+        }
     }
 }
 
