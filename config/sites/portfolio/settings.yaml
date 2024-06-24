@@ -10,3 +10,17 @@ styles:
       columnSpacing: 10
       borderWidth: 2
       borderPadding: 0
+
+socials:
+  channels:
+    xing:
+      link: 'https://www.xing.com/profile/Georg_Ringer'
+    linkedin:
+      link: 'https://www.linkedin.com/in/georgringer'
+    x:
+      link: 'https://twitter.com/georg_ringer'
+    github:
+      link: 'https://github.com/georgringer'
+
+logo:
+  path: '/fileadmin/logo/georg-ringer.svg'

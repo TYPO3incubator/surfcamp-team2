@@ -14,12 +14,6 @@
             "homepage": "https://typo3.org/community/"
         }
     ],
-    "repositories": {
-        "local_packages": {
-            "type": "path",
-            "url": "local_packages/*"
-        }
-    },
     "config": {
         "bin-dir": "bin",
         "platform": {
