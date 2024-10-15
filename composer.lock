@@ -819,12 +819,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfTYPO3/theme-portfolio.git",
-                "reference": "52e3a7508462f2513579b0a2dc0dd98286e8f1ef"
+                "reference": "90513ca764d4741f7da44dbddf6cfcc08013497e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfTYPO3/theme-portfolio/zipball/52e3a7508462f2513579b0a2dc0dd98286e8f1ef",
-                "reference": "52e3a7508462f2513579b0a2dc0dd98286e8f1ef",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/theme-portfolio/zipball/90513ca764d4741f7da44dbddf6cfcc08013497e",
+                "reference": "90513ca764d4741f7da44dbddf6cfcc08013497e",
                 "shasum": ""
             },
             "require": {
@@ -874,7 +874,7 @@
                 "issues": "https://github.com/FriendsOfTYPO3/theme-portfolio/issues",
                 "source": "https://github.com/FriendsOfTYPO3/theme-portfolio/tree/main"
             },
-            "time": "2024-10-15T10:49:27+00:00"
+            "time": "2024-10-15T14:40:00+00:00"
         },
         {
             "name": "graham-campbell/result-type",
