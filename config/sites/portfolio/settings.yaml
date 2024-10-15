@@ -2,7 +2,7 @@ styles:
   content:
     links:
       keep: path
-      extTarget: '_blank'
+      extTarget: _blank
     allowTags: 'a, abbr, acronym, address, article, aside, b, bdo, big, blockquote, br, caption, center, cite, code, col, colgroup, dd, del, dfn, dl, div, dt, em, figcaption, figure, font, footer, header, h1, h2, h3, h4, h5, h6, hr, i, img, ins, kbd, label, li, link, meta, nav, ol, p, pre, q, s, samp, sdfield, section, small, span, strike, strong, style, sub, sup, table, thead, tbody, tfoot, td, th, tr, title, tt, u, ul, var'
     textmedia:
       maxW: 600
@@ -10,17 +10,21 @@ styles:
       columnSpacing: 10
       borderWidth: 2
       borderPadding: 0
-
 socials:
   channels:
-    xing:
-      link: 'https://www.xing.com/profile/Georg_Ringer'
     linkedin:
-      link: 'https://www.linkedin.com/in/georgringer'
+      link: 'https://www.linkedin.com/company/typo3-association'
     x:
-      link: 'https://twitter.com/georg_ringer'
+      link: 'https://x.com/typo3'
     github:
-      link: 'https://github.com/georgringer'
-
-logo:
-  path: '/fileadmin/logo/georg-ringer.svg'
+      link: 'https://github.com/typo3'
+    youtube:
+      link: 'https://www.youtube.com/@typo3'
+style:
+  data:
+    buttonBorderRadius:
+      value: rounded
+  buttonBorderRadius: round
+  primaryColor: '#397e6f'
+  secondaryColor: '#4dd5ff'
+  theme: light
