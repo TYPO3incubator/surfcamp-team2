@@ -1,6 +1,6 @@
 base: '%env(TYPO3_BASE_URL)%'
 dependencies:
-  - friendsoftypo3/base
+  - friendsoftypo3/theme-portfolio
 errorHandling:
   -
     errorCode: 404
@@ -25,4 +25,3 @@ languages:
     flag: de
 rootPageId: 1
 websiteTitle: 'Georg Ringer'
-routes: {  }
