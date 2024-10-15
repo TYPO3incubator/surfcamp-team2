@@ -19,6 +19,9 @@
         "platform": {
             "php": "8.2.0"
         },
+        "preferred-install": {
+            "friendsoftypo3/theme-portfolio": "src"
+        },
         "sort-packages": true,
         "allow-plugins": {
             "typo3/class-alias-loader": true,
